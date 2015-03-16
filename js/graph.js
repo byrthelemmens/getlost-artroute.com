@@ -1,6 +1,6 @@
 
 // elements
-var graphBackgroundElement = document.getElementById('graph-background');
+var graphWrapperElement = document.getElementById('graph-wrapper');
 var graphElement = document.getElementById('graph');
 var canvasWidth, canvasHeight, scale;
 
@@ -18,43 +18,53 @@ var values;
 $.getJSON(url, function (data) {
 	values = data;
 	draw(values);
-	showBackground();
 });
 
 window.addEventListener('resize', setCanvasDimensions);
 
 function setCanvasDimensions () {
-	var height = Math.round((graphBackgroundElement.offsetWidth / 1920) * 550) + 'px';
-	graphBackgroundElement.setAttribute('style', 'height: ' + height);
-	canvasWidth = graphElement.width = graphBackgroundElement.offsetWidth;
-	canvasHeight = graphElement.height = graphBackgroundElement.offsetHeight;
+	var height = Math.round((graphWrapperElement.offsetWidth / 1920) * 550) + 'px';
+	graphWrapperElement.setAttribute('style', 'height: ' + height);
+	canvasWidth = graphElement.width = graphWrapperElement.offsetWidth;
+	canvasHeight = graphElement.height = graphWrapperElement.offsetHeight;
 	scale = canvasHeight / (maxValue - minValue);
 	if (values) {
 		draw(values);
 	}
 }
 
-function showBackground () {
-	graphBackgroundElement.classList.remove('background-hidden');
+function draw (values) {
+
+	context.save();
+	context.beginPath();
+	context.moveTo(0, 0);
+	drawLines(values);
+	context.lineTo(canvasWidth, 0);
+	context.closePath();
+	context.fill();
+	context.clip();
+
+	var img = new Image();
+	img.onload = function () {
+	    context.drawImage(img, 0, 0);
+		context.restore();
+	}
+	img.src = '../img/img_graph01.png';
 }
 
-function draw (data) {
+function drawLines (data) {
 	var length = data.aex.length;
 	var width = Math.ceil(canvasWidth / length);
 	var x = 0;
 	// draw 
 	data.aex.forEach(function (row) {
-		drawBar(x, getY(row.value), width, getHeight(row.value));
+		drawLine(x, width, getHeight(row.value));
 		x += width;
 	});
 }
 
-function drawBar (x, y, width, height) {
-	context.fillRect(x, y, width, height);
-}
-
-function getY (value) {
-	return (maxValue - value) * scale;		
+function drawLine (x, width, height) {
+	context.lineTo(x + width, height);
 }
 
 function getHeight (value) {

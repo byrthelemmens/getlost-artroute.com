@@ -18,17 +18,11 @@ body {
 .navbar-inverse .navbar-collapse {
   	text-align: center;
 }
-.graph{
-	display: block;
-}
-#graph-background {
-	background-image: url('../img/img_graph01.png');
-	background-position: top center;
-	background-size: 100%;
-	background-repeat: no-repeat;
-}
-#graph-background.background-hidden {
-	background: none;
+
+#graph-wrapper {
+	width: 100%;
+	height: 550px;
+	position: fixed;
 }
 .title{
 	text-align: center;
