@@ -20,9 +20,10 @@ body {
 }
 
 #graph-wrapper {
-	width: 100%;
+	display: block;
 	height: 550px;
-	position: fixed;
+	z-index: 9;
+	margin: 0;
 }
 .title{
 	text-align: center;

@@ -2,6 +2,7 @@
 // elements
 var graphWrapperElement = document.getElementById('graph-wrapper');
 var graphElement = document.getElementById('graph');
+var wrapElement = document.getElementById('wrap');
 var canvasWidth, canvasHeight, scale;
 
 // draw
@@ -27,10 +28,16 @@ function setCanvasDimensions () {
 	graphWrapperElement.setAttribute('style', 'height: ' + height);
 	canvasWidth = graphElement.width = graphWrapperElement.offsetWidth;
 	canvasHeight = graphElement.height = graphWrapperElement.offsetHeight;
+	setWrapPaddingTop();
 	scale = canvasHeight / (maxValue - minValue);
 	if (values) {
 		draw(values);
 	}
+}
+
+function setWrapPaddingTop() {
+	graphWrapperElement.setAttribute('style', 'position: fixed;');
+	wrapElement.setAttribute('style', 'padding-top: ' + canvasHeight + 'px;');
 }
 
 function draw (values) {
@@ -58,13 +65,13 @@ function drawLines (data) {
 	var x = 0;
 	// draw 
 	data.aex.forEach(function (row) {
-		drawLine(x, width, getHeight(row.value));
+		drawLine(x, getHeight(row.value));
 		x += width;
 	});
 }
 
-function drawLine (x, width, height) {
-	context.lineTo(x + width, height);
+function drawLine (x, height) {
+	context.lineTo(x, height);
 }
 
 function getHeight (value) {
