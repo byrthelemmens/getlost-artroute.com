@@ -1,5 +1,4 @@
 body { 
-	width:100%;
 	padding-top: 50px; 
 	font-size:18px;
 }
@@ -10,6 +9,9 @@ body {
 }
 .navbar-inverse .navbar-collapse {
   	text-align: center;
+}
+.graph{
+	height:550px;
 }
 .title{
 	text-align: center;
