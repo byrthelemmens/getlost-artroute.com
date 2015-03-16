@@ -1,6 +1,14 @@
 body { 
-	padding-top: 50px; 
-	font-size:18px;
+	margin:0;
+	padding: 50px 25px 25px 25px;
+	background-color: #000;
+	font-size:16px;
+}
+.wrap{
+	background-color: #fff;
+}
+.row{
+	
 }
 .navbar-inverse .navbar-nav {
 	display: inline-block;
@@ -21,21 +29,26 @@ body {
 	padding-top:20px;
 }
 .fullbar{
-	background-color: lightpink;
+	background-color:;
 	padding:20px 0;
+	border-top: solid 1px black; 
+	margin-bottom:20px;
 }
-.fulltext{
-	background-color: lightpink;
-	padding:10px 175px 40px 175px;
-	text-align: center
+.col-lg-12 .fulltext{
+	text-align: justify;
+	margin:0 200px 100px 200px;
+}
+.col-sm-12 .fulltext p{
+	text-align: left;
+	margin:0 25px;
 }
 #left{
-	background-color: lightyellow;
-	padding:0px 40px 50px 130px;
+	background-color: ;
+	padding:0px 40px 50px 250px;
 }
 #right{
-	background-color: lightblue;
-	padding:0px 100px 50px 30px;
+	background-color: ;
+	padding:0px 250px 50px 40px;
 }
 #left p, #right p{
 	margin-top:20px;
