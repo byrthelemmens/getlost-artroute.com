@@ -1,0 +1,43 @@
+#!/usr/bin/env node
+
+var fs = require('fs');
+
+var startDate = new Date(2015, 4, 1); // 1 april 2015
+var endDate = new Date(2015, 9, 30); // 30 september 2015
+var currentDate = startDate;
+var startValue = 498.33;
+var prevValue = startValue;
+var arr = [];
+
+while (currentDate <= endDate) {
+    arr.push(getDataForDate(new Date(currentDate)));
+    currentDate.setDate(currentDate.getDate() + 1);
+}
+
+var obj = {};
+obj.aex = arr;
+
+fs.writeFileSync('./aex.json', JSON.stringify(obj, null, '\t'));
+
+function getDataForDate (date) {
+
+	var obj = {};
+	var diffValue = getRandomValue(prevValue);
+	prevValue = diffValue;
+	obj.date = getDateString(date);
+	obj.value = diffValue;
+	return obj;
+}
+
+function getRandomValue (value) {
+	var diffMax = 20;
+	var diff = (Math.random() - 0.5) * diffMax;
+	return value + diff;
+}
+
+function getDateString(date) {
+	var year = date.getFullYear();
+	var month = ('0' + date.getMonth()).slice(-2);
+	var day = ('0' + date.getDate()).slice(-2);
+	return year + '-' + month + '-' + day;
+}
