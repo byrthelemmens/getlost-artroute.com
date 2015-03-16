@@ -6,6 +6,13 @@ body {
 }
 .wrap{
 	background-color: #fff;
+	padding:0 200px;
+}
+/* breaking point */
+@media(max-width:1200px) {
+	.wrap{
+		padding:0 80px;
+	}
 }
 .row{
 	
@@ -30,6 +37,7 @@ body {
 	text-transform: uppercase;
 	font-size:28px;
 	padding-top:20px;
+	margin-top:50px;
 }
 .fullbar{
 	background-color:;
@@ -37,21 +45,11 @@ body {
 	border-top: solid 1px black; 
 	margin-bottom:20px;
 }
-.col-lg-12 .fulltext{
-	text-align: justify;
-	margin:0 200px 100px 200px;
-}
-.col-sm-12 .fulltext p{
-	text-align: left;
-	margin:0 25px;
-}
 #left{
 	background-color: ;
-	padding:0px 40px 50px 250px;
 }
 #right{
 	background-color: ;
-	padding:0px 250px 50px 40px;
 }
 #left p, #right p{
 	margin-top:20px;
