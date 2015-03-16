@@ -12,6 +12,7 @@ body {
 }
 .graph{
 	height:550px;
+	background-image: url('../img/img_graph01.png');
 }
 .title{
 	text-align: center;
