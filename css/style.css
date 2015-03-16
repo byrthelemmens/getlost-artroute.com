@@ -19,8 +19,16 @@ body {
   	text-align: center;
 }
 .graph{
-	height:550px;
+	display: block;
+}
+#graph-background {
 	background-image: url('../img/img_graph01.png');
+	background-position: top center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+#graph-background.background-hidden {
+	background: none;
 }
 .title{
 	text-align: center;
