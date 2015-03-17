@@ -77,12 +77,24 @@ function draw (values) {
 }
 
 function drawLines (data) {
+
 	var length = data.aex.length;
 	var width = Math.ceil(canvasWidth / length);
 	var x = 0;
+	
 	// draw 
 	data.aex.forEach(function (row) {
-		drawLine(x, getHeight(row.value));
+		var value = row.value;
+		var height;
+		if (new Date(row.date) > new Date('06-22-2015')) {
+			value = undefined;
+		}
+		if (value) {
+			drawLine(x, getHeight(value));
+		} else {
+			drawLine(x - width, getHeight(maxValue));
+			drawLine(x, getHeight(maxValue));
+		}
 		x += width;
 	});
 }
