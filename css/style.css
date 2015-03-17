@@ -57,16 +57,23 @@ body {
 #left p, #right p{
 	margin-top:20px;
 }
+.quote{
+	display:block;
+	font-size:14px;
+	letter-spacing: 1;
+	padding:0 20px;
+}
 .jumbotron{
 	background-image: url("../img/kaart.jpg");
 	background-size: cover;
 	height:400px;
 	margin:0;
 }
-button.btn{
+button .btn, .btn{
 	background-color: #EEEEEE !important;
 	border-bottom: 1px solid blue;
 	border-radius: 0 !important;
+	margin:20px 0;
 }
 .panel{
 	background-color: #EEEEEE !important;
