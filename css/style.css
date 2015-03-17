@@ -31,15 +31,17 @@ body {
 	height: 550px;
 	z-index: 9;
 	margin: 0;
+	pointer-events: none;
 }
 
 #program {
 	height: 600px;
 	margin: 0;
+	margin-bottom: 122px;
 	background: white;
 }
 #program .program-bar {
-	height: 520px;
+	height: 100%;
 	width: 4px;
 	background: white;
 	border-right: solid 1px #DDD;
@@ -52,9 +54,11 @@ body {
 }
 
 #program .program-months {
+	height: 48px;
 	overflow: visible;
 	clear: both;
 	position: relative;
+	background: white;
 }
 
 #program .program-months div {
@@ -66,7 +70,7 @@ body {
 	border: 1px solid black;
 	border-left: none;
 }
-#program .program-months div:last-child {
+#program .program-months .program-months-september {
 	border-right: none;
 }
 
@@ -81,6 +85,10 @@ body {
 	z-index: 8;
 }
 #program .program-event-data {
+	height: 74px;
+	background: white;	
+}
+#program .program-event-data section {
 	display: inline-block;
 	position: relative;
 	width: 160px;

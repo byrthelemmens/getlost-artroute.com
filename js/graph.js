@@ -3,6 +3,7 @@
 var graphWrapperElement = document.getElementById('graph-wrapper');
 var graphElement = document.getElementById('graph');
 var wrapElement = document.getElementById('wrap');
+var programElement = document.getElementById('program');
 var canvasWidth, canvasHeight, scale;
 
 // draw
@@ -25,7 +26,7 @@ window.addEventListener('resize', setCanvasDimensions);
 
 function setCanvasDimensions () {
 	var height = Math.round((graphWrapperElement.offsetWidth / 1920) * 550) + 'px';
-	graphWrapperElement.setAttribute('style', 'height: ' + height);
+	graphWrapperElement.setAttribute('style', 'height: ' + height + ';');
 	canvasWidth = graphElement.width = graphWrapperElement.offsetWidth;
 	canvasHeight = graphElement.height = graphWrapperElement.offsetHeight;
 	setWrapPaddingTop();
@@ -36,8 +37,13 @@ function setCanvasDimensions () {
 }
 
 function setWrapPaddingTop() {
-	graphWrapperElement.setAttribute('style', 'position: fixed;');
-	wrapElement.setAttribute('style', 'padding-top: ' + canvasHeight + 'px;');
+	var styleAttribute = graphWrapperElement.getAttribute('style') + ' position:fixed;';
+	graphWrapperElement.setAttribute('style', styleAttribute);
+	if (programElement) {
+		programElement.style.height = canvasHeight + 'px';
+	} else {
+		wrapElement.setAttribute('style', 'padding-top: ' + canvasHeight + 'px;');
+	}
 }
 
 function draw (values) {
