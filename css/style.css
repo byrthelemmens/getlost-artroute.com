@@ -2,7 +2,12 @@ body {
 	margin:0;
 	padding: 50px 25px 25px 25px;
 	background-color: #000;
+	/*font-family: monospace;*/
+	font-family: 'Karla', sans-serif;
+	/*font-family: 'Puritan', sans-serif;*/
+	/*font-family: 'Inconsolata';*/	
 	font-size:16px;
+	text-align: justify;
 }
 .wrap{
 	background-color: #fff;
@@ -31,7 +36,6 @@ body {
 .fullbar{
 	background-color:;
 	padding:20px 0;
-	border-top: solid 1px black; 
 	margin-bottom:20px;
 }
 .col-lg-12 .fulltext{
@@ -39,7 +43,7 @@ body {
 	margin:0 200px 100px 200px;
 }
 .col-sm-12 .fulltext p{
-	text-align: left;
+	
 	margin:0 25px;
 }
 #left{
@@ -58,4 +62,22 @@ body {
 	background-size: cover;
 	height:400px;
 	margin:0;
+}
+button.btn{
+	background-color: #EEEEEE !important;
+	border-bottom: 1px solid blue;
+	border-radius: 0 !important;
+}
+.panel{
+	background-color: #EEEEEE !important;
+	border-bottom: 1px solid blue;
+	border-radius: 0 !important;
+}
+.panel-heading{
+	
+}
+.panel-collapse .panel-body{
+	border-top:1px solid blue !important;
+	background-color: #EEEEEE;
+	
 }
