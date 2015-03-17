@@ -42,6 +42,8 @@ function setWrapPaddingTop() {
 
 function draw (values) {
 
+
+	// graph
 	context.save();
 	context.beginPath();
 	context.moveTo(0, 0);
@@ -51,12 +53,21 @@ function draw (values) {
 	context.fill();
 	context.clip();
 
+	// image
 	var img = new Image();
 	img.onload = function () {
-	    context.drawImage(img, 0, 0);
+	    context.drawImage(img, 0, 0, canvasWidth, canvasHeight);
+
+		// text AEX value
+		context.font = '14px Helvetica';
+		context.fillText('AEX', 15, 30);
+		context.font = 'bold 18px Helvetica';
+		context.fillText(values.aex[values.aex.length - 1].value.toFixed(2), 15, 50);
+
 		context.restore();
 	}
 	img.src = '../img/img_graph01.png';
+
 }
 
 function drawLines (data) {
@@ -75,5 +86,5 @@ function drawLine (x, height) {
 }
 
 function getHeight (value) {
-	return (value - minValue) * scale;
+	return (maxValue - value) * scale;
 }
