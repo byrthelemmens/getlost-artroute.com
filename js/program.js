@@ -10,12 +10,34 @@ $.getJSON(url, function (data) {
 	initProgram();
 });
 
-function initProgram () {
+window.addEventListener('resize', resizeHandler);
 
-	json.aex.forEach(addDay);
+var timeout;
+function resizeHandler (event) {
+	if (timeout) {
+		window.clearTimeout(timeout);
+	}
+	timeout = window.setTimeout(function () {
+		resetEvents();
+	}, 500);
 }
 
-function addDay (day, index) {
+function resetEvents () {
+
+	var elements = monthsElement.querySelectorAll('.program-event');
+	Array.prototype.forEach.call(elements, function (elem) {
+		monthsElement.removeChild(elem);
+	});
+	json.aex.forEach(addDayEvents);
+}
+
+function initProgram () {
+
+	json.aex.forEach(addDayBar);
+	json.aex.forEach(addDayEvents);
+}
+
+function addDayBar (day) {
 
 	// bar
 	var div = document.createElement('div');
@@ -23,6 +45,9 @@ function addDay (day, index) {
 	var percentage = 100 / json.aex.length;
 	div.style.width = percentage + '%';
 	programElement.insertBefore(div, programElement.firstChild);
+}
+
+function addDayEvents (day, index) {
 
 	// event
 	if (typeof day.events !== 'undefined' && day.events.length) {

@@ -22,7 +22,18 @@ $.getJSON(url, function (data) {
 	draw(values);
 });
 
-window.addEventListener('resize', setCanvasDimensions);
+window.addEventListener('resize', resizeHandler);
+
+
+var timeout;
+function resizeHandler (event) {
+	if (timeout) {
+		window.clearTimeout(timeout);
+	}
+	timeout = window.setTimeout(function () {
+		setCanvasDimensions();
+	}, 500);
+}
 
 function setCanvasDimensions () {
 	var height = Math.round((graphWrapperElement.offsetWidth / 1920) * 550) + 'px';
