@@ -1,0 +1,60 @@
+
+var programElement = document.getElementById('program');
+var monthsElement = document.getElementById('program-months');
+var eventDataElement = document.getElementById('program-event-data');
+
+var url = 'data/aex.json'; 
+var json;
+$.getJSON(url, function (data) {
+	json = data;
+	initProgram();
+});
+
+function initProgram () {
+
+	json.aex.forEach(addDay);
+}
+
+function addDay (day, index) {
+
+	// bar
+	var div = document.createElement('div');
+	div.classList.add('program-bar');
+	var percentage = 100 / json.aex.length;
+	div.style.width = percentage + '%';
+	programElement.insertBefore(div, programElement.firstChild);
+
+	// event
+	if (typeof day.events !== 'undefined' && day.events.length) {
+		day.events.forEach(function (event) {
+			var elem = document.createElement('span');
+			elem.classList.add('program-event');
+			elem.style.left = (index * (programElement.offsetWidth / json.aex.length)) + 'px';
+			elem.setAttribute('data-event-date', day.date);
+			elem.setAttribute('data-event-title', event.title);
+			elem.setAttribute('data-event-description', event.description);
+			elem.addEventListener('mouseover', mouseoverHandler);
+			monthsElement.appendChild(elem);
+		});
+	}
+}
+
+function mouseoverHandler (event) {
+
+	var date = getDisplayDate(event.currentTarget.getAttribute('data-event-date'));
+	var title = event.currentTarget.getAttribute('data-event-title');
+	var description = event.currentTarget.getAttribute('data-event-description');
+	eventDataElement.innerHTML = '<h1>' + date + ': ' + title + '</h1><p>' + description + '</p>';
+
+	var left = parseInt(event.currentTarget.style.left, 10)
+	var programElementWidth = programElement.offsetWidth;
+	var eventDataElementWidth = eventDataElement.offsetWidth;
+	left = left > programElementWidth - eventDataElementWidth ? programElementWidth - eventDataElementWidth : left;
+	eventDataElement.style.left = left + 'px';
+}
+
+function getDisplayDate (date) {
+	var date = new Date(date);
+	var monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+	return date.getDate() + ' ' + monthNames[date.getMonth()];
+}

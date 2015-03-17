@@ -32,6 +32,66 @@ body {
 	z-index: 9;
 	margin: 0;
 }
+
+#program {
+	height: 600px;
+	margin: 0;
+	background: white;
+}
+#program .program-bar {
+	height: 520px;
+	width: 4px;
+	background: white;
+	border-right: solid 1px #DDD;
+	float: left;
+}
+
+#program .program-bar:hover {
+	border-right: solid 1px black;
+	cursor: pointer;
+}
+
+#program .program-months {
+	overflow: visible;
+	clear: both;
+	position: relative;
+}
+
+#program .program-months div {
+	float: left;
+	width: 16.66%;
+	height: 48px;
+	padding-top: 12px;
+	text-align: center;
+	border: 1px solid black;
+	border-left: none;
+}
+#program .program-months div:last-child {
+	border-right: none;
+}
+
+#program .program-event {
+	top: -3px;
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	display: block;
+	border-radius: 4px;
+	background: red;
+	z-index: 8;
+}
+#program .program-event-data {
+	display: inline-block;
+	position: relative;
+	width: 160px;
+}
+#program .program-event-data h1 {
+	font-size: 16px;
+}
+#program .program-event-data p {
+	font-size: 12px;
+}
+
 .title{
 	text-align: center;
 	text-transform: uppercase;
