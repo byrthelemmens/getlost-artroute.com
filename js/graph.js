@@ -79,8 +79,13 @@ function draw (values) {
 		context.font = '14px Helvetica';
 		context.fillText('AEX', 15, 30);
 		context.font = 'bold 18px Helvetica';
-		context.fillText(values.aex[values.aex.length - 1].value.toFixed(2), 15, 50);
-
+		var fillText;
+		values.aex.forEach(function (day) {
+			if (day.value) {
+				fillText = day.value;
+			}
+		});
+		context.fillText(parseFloat(fillText, 10).toFixed(2), 15, 50);
 		context.restore();
 	}
 	img.src = '../img/img_graph01.png';
