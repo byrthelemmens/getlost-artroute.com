@@ -4,6 +4,7 @@ var monthsElement = document.getElementById('program-months');
 var eventDataElement = document.getElementById('program-event-data');
 
 var url = 'data/aex.php'; 
+//var url = 'data/aex.json'; 
 var json;
 $.getJSON(url, function (data) {
 	json = data;

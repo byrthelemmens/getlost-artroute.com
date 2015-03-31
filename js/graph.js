@@ -10,11 +10,12 @@ var canvasWidth, canvasHeight, scale;
 var context = graphElement.getContext('2d');
 
 // data
-var minValue = 350, maxValue = 550;
+var minValue = 350, maxValue = 700;
 
 setCanvasDimensions();
 
 var url = 'data/aex.php'; 
+//var url = 'data/aex.json'; 
 var values;
 
 $.getJSON(url, function (data) {
@@ -88,8 +89,7 @@ function draw (values) {
 		context.fillText(parseFloat(fillText, 10).toFixed(2), 15, 50);
 		context.restore();
 	}
-	img.src = '../img/img_graph01.png';
-
+	img.src = '../img/img_graph04.png';
 }
 
 function drawLines (data) {
