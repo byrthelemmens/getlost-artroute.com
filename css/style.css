@@ -1,7 +1,7 @@
 body { 
 	margin:0;
-	padding: 50px 25px 25px 25px;
-	background-color: #000;
+	padding:0 0 150px 0;
+	background-color: #fff;
 	/*font-family: monospace;*/
 	font-family: 'Karla', sans-serif;
 	/*font-family: 'Puritan', sans-serif;*/
@@ -9,8 +9,13 @@ body {
 	font-size:16px;
 	text-align: justify;
 }
+a{
+	color:black;
+}
+a:hover{color:blue;}
+a:visited{color:black;}
 .wrap{
-	background-color: #fff;
+	background-color: #Fff;
 	padding:0 200px;
 }
 /* breaking point */
@@ -19,16 +24,39 @@ body {
 		padding:0 80px;
 	}
 }
+#firstdiv{
+	margin-top:120px;
+}
 .row{
 	
 }
-.navbar-inverse .navbar-nav {
+.img-responsive{
+	border:1px solid white;
+	position: relative;
+	z-index: 900;
+}
+.navbar, .navbar-nav {
+	background-color:#ffcc00 !important;
+	border:0;
+	padding:0;
 	display: inline-block;
 	float: none;
 	vertical-align: top;
 }
-.navbar-inverse .navbar-collapse {
+.navbar .navbar-collapse {
   	text-align: center;
+  	text-transform: uppercase;
+}
+.navbar-nav > li > a{
+	padding:15px;
+}
+.navbar .navbar-nav>.active>a, .navbar.navbar-nav>.active>a:hover, .navbar .navbar-nav>.active>a:focus{
+	background-color: #fff;
+	color:black;
+	text-transform: uppercase;
+}
+.navbar-default .navbar-nav>li>a{
+	color:#444;
 }
 
 #graph-wrapper {
@@ -132,17 +160,34 @@ body {
 	letter-spacing: 1;
 	padding:0 20px;
 }
-.jumbotron{
-	background-image: url("../img/kaart.jpg");
-	background-size: cover;
-	height:400px;
+.titletron img{
+	height:50px;
+	margin:30px;
+	padding:0;
+	border-bottom:4px solid black;
+	top:0;
+	position: relative;
+	z-index: 900;
+}
+.tron img{
+	width:100%;
+	height:auto;
 	margin:0;
+	padding:0;
+	top:0;
+	opacity: 0.99;
+	position: fixed;
+	z-index: 800;
 }
 button .btn, .btn{
 	background-color: #EEEEEE !important;
 	border-bottom: 1px solid blue;
 	border-radius: 0 !important;
 	margin:20px 0;
+}
+.subtitle{
+	text-transform: uppercase;
+	text-align: center !important;
 }
 .panel{
 	background-color: #EEEEEE !important;
@@ -157,3 +202,4 @@ button .btn, .btn{
 	background-color: #EEEEEE;
 	
 }
+
