@@ -10,7 +10,7 @@ var canvasWidth, canvasHeight, scale;
 var context = graphElement.getContext('2d');
 
 // data
-var minValue = 350, maxValue = 700;
+var minValue = 350, maxValue = 900;
 
 setCanvasDimensions();
 
