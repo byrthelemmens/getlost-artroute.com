@@ -56,11 +56,14 @@
 -->
   <div class="titletron">
     <center>
-      <img src="img/program.svg">
+      <img src="img/program.svg" style="z-index:999;">
     </center>
   </div>
-  <div class="tron">
+  <div style="position:absolute; z-index:800; width:100%; top:0; overflow-x:hidden !important;">
       <img src="img/screenshot.png">
+  </div>
+  <div style="position:fixed; z-index:950; width:100%; top:0;">
+      <img src="img/screenshot2.png">
   </div>
   
 
@@ -77,21 +80,16 @@
       <section id="program-event-data"></section>
     </div>
   </div>
-  <div class="wrap" id="wrap firstdiv">
+  <div class="wrap" id="wrap">
     <div class="row">
-      <div class="fullbar title col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <img src="img/program.svg" height="28px">
-      </div>
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div class="fulltext">
-        <p>
-          De eerste GET LOST – art route vindt plaats van 12 juni tot en met 25 september 2015 op de Amsterdamse Zuidas. 
-          Zeven bedrijven/organisaties hebben acht kunstenaars de opdracht gegeven een kunstwerk in de openbare ruimte te realiseren. 
+        <p style="margin-top:-300px;">
+          De eerste GET LOST – art route vindt plaats van 12 juni tot en met 25 september 2015 op de Zuidas in Amsterdams. De Zuidas is het internationale kennis- en zakendistrict van Amsterdam, gelegen tussen de Amsterdamse binnenstad en Schiphol. Zeven bedrijven/organisaties hebben acht kunstenaars de opdracht gegeven een kunstwerk in de openbare ruimte te realiseren. 
           <br><br>
-        </p>
-        <p>
           GET LOST - art route genereert kunst in openbare ruimte 
-          door middel van een samenwerking tussen bedrijfsleven en jonge kunstenaars en creëert daarmee een ontmoetingsplek, de kunstroute. Tijdens GET LOST – art route 2015 kan het publiek ‘dwalen’ langs de kunstwerken op de Zuidas. Ook organiseert GET LOST – art route openbare evenementen waarbij de nadruk ligt op de ontmoeting tussen de verschillende doelgroepen. <br><br>Houd deze website in de gaten voor actuele informatie.     
+          door middel van een samenwerking tussen het bedrijfsleven en jonge kunstenaars en creëert daarmee een ontmoetingsplek, de kunstroute. Tijdens GET LOST – art route 2015 kan het publiek ‘verdwalen’ over de Zuidas langs de verschillende kunstwerken.
+
         </p>
       </div>
     </div>
@@ -101,14 +99,14 @@
           <img src="img/events.svg" height="28px">
         </div>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum pretium nunc, eu bibendum nulla dignissim vel. Fusce varius ut ipsum in elementum. Donec sed arcu et mi egestas pellentesque. Maecenas bibendum turpis urna, vitae imperdiet enim molestie ut. Nullam 
+          GET LOST – art route organiseert openbare evenementen waarbij de nadruk ligt op de ontmoeting tussen werknemers van de Zuidas, kunstenaars, studenten en buurtbewoners.<br><br>
         </p>
         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
           <div class="panel">
             <div class="panel-heading" role="tab" id="headingOne">
               <h4 class="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  12 Juni: Opening
+                  11 Juni: Preview voor genodigden
                 </a>
               </h4>
             </div>
@@ -122,7 +120,7 @@
             <div class="panel-heading" role="tab" id="headingTwo">
               <h4 class="panel-title">
                 <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  13 Juni: Guided Tour
+                  12 Juni: Officiële opening van 16.00 - 21.00 uur
                 </a>
               </h4>
             </div>
@@ -136,7 +134,7 @@
             <div class="panel-heading" role="tab" id="headingThree">
               <h4 class="panel-title">
                 <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  23 September: Finnissage
+                  13 & 14 Juni: Feestelijk openingsweekend
                 </a>
               </h4>
             </div>
@@ -146,6 +144,23 @@
               </div>
             </div>
           </div>
+          <div class="panel">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <h4 class="panel-title">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  23 September: Finissage
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="panel-body">
+                Blurb
+              </div>
+            </div>
+          </div>
+          <p>
+          Houd deze site in de gaten voor actuele informatie over speciale rondleidingen, activiteiten, lezingen en meer!
+          </p>
         </div>
       </div><!-- left -->
   
@@ -155,20 +170,12 @@
         </div>
       
         <p>
-          Guided Artist Tour
-          Rondleiding door David Bernstein in samenwerking met Rosa Sijben en Styrmir Örn Guömundsson. <br><br>
-          Upcoming dates:
-          <ul>
-            <li>12 Juni</li>
-            <li>14 Juni</li>
-            <li>16 Juni</li>
-          </ul>
-          <button class="btn">Sign Up</button>
+          Rondleiding door David Bernstein in samenwerking met Rosa Sijben en Styrmir Örn Guömundsson
 
           <p>
           Voor GET LOST - art route ontwikkelden drie kunstenaars een guided tour langs de kunstwerken waarmee ze hun eigenzinnige licht op de tentoonstelling schijnen. Absurditeit en humor gaan hierin hand in hand met verbeelding en filosofie. De Guided Artist Tour is gedurende de hele periode van de tentoonstelling te bewandelen en beleven.<br><br>
         </p>
-        <button class="btn">Download podcast</button>
+        <button class="btn">Reservations</button>
       </div><!-- /right-->
     </div><!-- /row-->
 	</div><!-- wrap-->
