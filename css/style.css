@@ -1,8 +1,18 @@
 body { 
 	margin:0;
 	padding:0 0 150px 0;
-	background-color: #fff;
-	border-left:50px solid #ffcc00;
+	background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, #FFFFFF),
+	color-stop(1, #FFCC00)
+);
+background-image: -o-linear-gradient(top, #FFFFFF 0%, #000 100%);
+background-image: -moz-linear-gradient(top, #FFFFFF 0%, #000 100%);
+background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #000 100%);
+background-image: -ms-linear-gradient(top, #FFFFFF 0%, #000 100%);
+background-image: linear-gradient(to top, #FFFFFF 0%, #000 100%);
 	/*font-family: monospace;*/
 	font-family: 'Karla', sans-serif;
 	/*font-family: 'Puritan', sans-serif;*/
@@ -17,13 +27,13 @@ a:hover{color:blue;}
 a:visited{color:black;}
 .wrap{
 	background-color: #Fff;
-
-	padding:0 200px;
+	margin-left:50px;
+	padding:0 0px;
 }
 /* breaking point */
 @media(max-width:1200px) {
 	.wrap{
-		padding:0 80px;
+		padding:0 0px;
 	}
 }
 #firstdiv{
