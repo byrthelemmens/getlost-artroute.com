@@ -1,18 +1,6 @@
 body { 
 	margin:0;
 	padding:0;
-	background-image: -webkit-gradient(
-		linear,
-		left bottom,
-		left top,
-		color-stop(0, #FFFFFF),
-		color-stop(1, #FFCC00)
-		);
-		background-image: -o-linear-gradient(top, #FFFFFF 0%, #000 100%);
-		background-image: -moz-linear-gradient(top, #FFFFFF 0%, #000 100%);
-		background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #000 100%);
-		background-image: -ms-linear-gradient(top, #FFFFFF 0%, #000 100%);
-		background-image: linear-gradient(to top, #FFFFFF 0%, #000 100%);
 	overflow-x: hidden;
 	font-family: arial, sans-serif;
 	letter-spacing: 0.05em;
@@ -23,23 +11,22 @@ a{color:black;}
 a:hover{color:blue;}
 a:visited{color:black;}
 #wrap{
-	background-color: #Fff;
 	margin-left:50px;
-	padding:0 0 150px 0;
 
 }
 /* breaking point */
 @media(max-width:1200px) {
 	#wrap{
 		margin-left:20px;
-		padding:0 0 150px 0;
 	}
 }
 .row{
 	margin-top:50px;
 }
 .firstrow{
-	margin-top: 0;
+	margin-top:0px;
+	padding:20px 0 0 0;
+
 }
 
 /* I M A G E S */
@@ -74,7 +61,7 @@ h2{
 	font-size:0.8em;
 	letter-spacing: 1;
 	padding:0 20px;
-	margin-bottom:-7.5px;
+	margin-bottom:-7px;
 }
 .bigquote{
 	font-size:1.2em;
@@ -101,6 +88,9 @@ h2{
 	text-transform: uppercase;
 	margin-bottom:15px;
 }
+.backhome{
+	background-color: transparent;
+}
 
 /* N A V I G A T I O N */
 .navbar, .navbar-nav {
@@ -125,7 +115,6 @@ button .btn, .btn{
 	background-color: #EEEEEE !important;
 	border-bottom: 1px solid blue;
 	border-radius: 0 !important;
-	margin:20px 0;
 }
 
 /* P A N E L  S T Y L E S */
@@ -144,79 +133,4 @@ button .btn, .btn{
 .panel-collapse .panel-body{
 	border-top:1px solid black !important;
 	background-color: #ffcc00;
-}
-
-/* G R A P H  S T Y L E S */
-#graph-wrapper {
-	display: block;
-	height: 550px;
-	z-index: 9;
-	margin: 0;
-	pointer-events: none;
-}
-
-#program {
-	height: 600px;
-	margin: 0;
-	margin-bottom: 122px;
-	background: white;
-}
-#program .program-bar {
-	height: 100%;
-	width: 4px;
-	background: white;
-	border-right: solid 1px #DDD;
-	float: left;
-}
-
-#program .program-bar:hover {
-	border-right: solid 1px black;
-	cursor: pointer;
-}
-
-#program .program-months {
-	height: 48px;
-	overflow: visible;
-	clear: both;
-	position: relative;
-	background: white;
-}
-
-#program .program-months div {
-	float: left;
-	width: 16.66%;
-	height: 48px;
-	padding-top: 12px;
-	text-align: center;
-	border: 1px solid black;
-	border-left: none;
-}
-#program .program-months .program-months-september {
-	border-right: none;
-}
-
-#program .program-event {
-	top: -3px;
-	position: absolute;
-	width: 8px;
-	height: 8px;
-	display: block;
-	border-radius: 4px;
-	background: red;
-	z-index: 8;
-}
-#program .program-event-data {
-	height: 74px;
-	background: white;	
-}
-#program .program-event-data section {
-	display: inline-block;
-	position: relative;
-	width: 160px;
-}
-#program .program-event-data h1 {
-	font-size: 16px;
-}
-#program .program-event-data p {
-	font-size: 12px;
 }
