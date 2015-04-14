@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<title>GET LOST: Program</title>
+  	<meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="...">
+      <meta name="author" content="Byrthe Lemmens & Gilles Wittenberg">
+      <meta name="Keywords" content="..." />
+
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/style_V2.css" rel="stylesheet">
+      <link href='http://fonts.googleapis.com/css?family=Puritan|Lato|Muli:300,400,300italic,400italic|Suravaram|Karla|Inconsolata|NTR' rel='stylesheet' type='text/css'>
+      <link rel="icon" 
+            type="image/png" 
+            href="img/assets/favi.png">
+
+      <meta property="og:image" content="img/....png" />
+    	<meta property="og:image:secure_url" content="img/....png" />
+    	<meta property="og:image:type" content="image/png" />
+    	<meta property="og:image:width" content="000" />
+    	<meta property="og:image:height" content="000" />
+  </head>
+
+  <body>
+
+  <!--
+    <div class="row graph" id="graph-wrapper">
+      <canvas id="graph" height="550"></canvas>
+    </div>
+
+    
+    
+
+    <div class="row" id="program">
+      <div class="program-months" id="program-months">
+        <div class="program-months-april">April</div>
+        <div class="program-months-may">May</div>
+        <div class="program-months-june">June</div>
+        <div class="program-months-july">July</div>
+        <div class="program-months-august">August</div>
+        <div class="program-months-september">September</div>
+      </div>
+      <div class="program-event-data">
+        <section id="program-event-data"></section>
+      </div>
+    </div>
+
+    -->
+    <div id="wrap">
+
+      <!-- G R A P H  P L A C E H O L D E R -->
+      <div style="position:absolute; z-index:800; width:100%; top:0; overflow-x:hidden !important;">
+          <img src="img/screenshot.png">
+      </div>
+      <div style="position:fixed; z-index:950; width:100%; top:0;">
+          <img src="img/screenshot2.png">
+      </div>
+      <!-- E N D  G R A P H-->
+
+      <div class="row">
+        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs">
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+            <div id="pagetitle">
+              <img src="img/program.svg" class="img-responsive" alt="GET LOST - art route: Program">
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs">
+        </div>
+      </div><!-- /row-->
+
+      <div class="row firstrow">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <p class="introtxt">
+            The first GET LOST - art route will take place between 12 June and 25 September 2015 in the Zuidas area of Amsterdam. The Zuidas (literally ‘South Axis’) is Amsterdam’s international knowledge and financial district and lies between the centre of Amsterdam and Schiphol airport. Seven companies and organisations have commissioned artworks from eight artists for the public space of the Zuidas. 
+            <br><br>
+            GET LOST - art route generates art in public space through partnering businesses with young artists. This creates a meeting place – the art route. During GET LOST - art route 2015, members of the public will be able to get lost in the Zuidas as it wanders from artwork to artwork. 
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+          <h2>
+            12.06.2015<br>
+            –<br>
+            25.09.2015
+          </h2>
+        </div>
+        <div class="col-lg-1 col-md-4 col-sm-4 col-xs-12">
+        </div>
+      </div><!-- /row-->
+
+      <div class="row">
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <div class="subtitle">
+            <img src="img/events.svg" class="img-responsive">
+          </div>
+          <p class="txt">
+            GET LOST - art route is organising a number of public events aimed at bringing about interactions between people who work in the Zuidas, artists, students and residents. <br><br>
+          </p>
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    11/06 : Preview invited guests
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  Blurb
+                </div>
+              </div>
+            </div>
+
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    12/06 : Official opening from 4 p.m. - 9 p.m
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                  Blurb
+                </div>
+              </div>
+            </div>
+
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    13/06 & 14/06 : Festive Opening Weekend
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  Blurb
+                </div>
+              </div>
+            </div>
+
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    23/09 : Finissage
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  Blurb
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <p class="txt">
+            Watch this website for up-to-date information about special guided tours, activities, lectures and more!<br><br>
+            Or stay in touch via one of these channels:
+            <img src="img/icons-04.png" style="height:35px; width:35px; margin:0 15px;">
+            <img src="img/icons-03.png" style="height:35px; width:35px; margin-right:15px;">
+            <img src="img/icons-02.png" style="height:35px; width:35px; margin-right:15px;">
+          </p>
+        </div><!-- col-->
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <div class="picture">
+            <img class="img-responsive" src="img/rechtbank.jpg">
+          </div>        
+          <div class="subtitle">
+            <img src="img/tours.svg" class="img-responsive">
+          </div>
+          <p class="txt">
+            Guided tour by David Bernstein with Rosa Sijben and Styrmir Örn Guömundsson.
+          </p>
+          <p>
+            Three artists have developed a guided tour around the artworks in GET LOST - art route in which they cast their own, idiosyncratic light on the exhibition. Absurdity and humour here go hand-in-hand with imagination and philosophy. The Guided Artist Tour can be walked and experienced throughout the exhibition.<br><br>
+          </p>
+          <button class="btn">Reservations</button>
+        </div>
+
+        <div class="col-lg-1 col-md-4 col-sm-4 col-xs-12">
+        </div>
+
+      </div><!-- /row-->
+
+    </div><!-- wrap-->
+    
+    <footer>
+
+        <div class="navbar navbar-fixed-bottom">
+            <div class="container">
+                <div class="navbar-collapse collapse" id="footer-body">
+                    <ul class="nav navbar-nav">
+                       <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Program</a></li>
+                        <li><a href="artroute.html">Art Route</a></li>
+                        <li><a href="participants.html">Participants</a></li>
+                        <li><a href="visit.html">Visit<span class="sr-only">(current)</span></a></li>
+                        <li><a href="about.html">About</a></li>
+                      </ul>
+                    </ul>
+                </div>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#footer-body">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button> 
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/code.js"></script>
+    <script src="js/graph.js"></script>
+    <script src="js/program.js"></script>
+  </body>
+</html>

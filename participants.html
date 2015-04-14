@@ -10,7 +10,7 @@
     <meta name="Keywords" content="..." />
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style_V2.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Puritan|Lato|Muli:300,400,300italic,400italic|Suravaram|Karla|Inconsolata|NTR' rel='stylesheet' type='text/css'>
     <link rel="icon" 
           type="image/png" 
@@ -25,85 +25,247 @@
 </head>
 
 <body>
-  <nav class="navbar-inverse navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#"></a>
-      </div>
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li><a href="index.html">Program</a></li>
-              <li><a href="artroute.html">Art Route</a></li>
-              <li class="active"><a href="#">Participants<span class="sr-only">(current)</span></a></li>
-              <li><a href="visit.html">Visit</a></li>
-              <li><a href="information.html">Information</a></li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
+
+  <div id="wrap">
+    <!-- G R A P H  P L A C E H O L D E R -->
+    <div style="position:fixed; z-index:950; width:100%; top:0; overflow-x:hidden !important;">
+        <img src="img/screenshot3.png">
     </div>
-  </nav>
+    <!-- E N D  G R A P H-->
 
-  <div class="wrap">
-    <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
-      <div class="fullbar title">
-        Participants
-      </div>
-
-      <div class="fulltext">
-        <p>
-          Etiam nulla massa, finibus viverra maximus vel, pretium sit amet elit. Etiam condimentum sed nisi ac maximus. Etiam eget pretium dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut interdum velit non mollis vestibulum. Aenean nulla ex, varius varius varius sed, ultricies ac quam. Nam eu egestas urna. Pellentesque rutrum quam non velit placerat, sit amet maximus elit convallis. Phasellus vitae erat velit. Mauris a velit fringilla, congue turpis id, faucibus metus.
-        </p>
-      </div>
-    </div><!--/row-->
+    <div class="row firstrow">
+      <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">
+      </div><!-- /col -->
+      <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+          <div id="pagetitle">
+            <img src="img/participants.svg" class="img-responsive" alt="GET LOST - art route: Participants">
+          </div>
+      </div><!-- /col -->
+      <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs">
+      </div><!-- /col -->
+    </div><!-- /row-->  
 
     <div class="row">
-      <div id="left" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-        <div class="title">
+      <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs">
+      </div><!-- /col -->
+      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+          <p class="txt">
+            
+          </p>
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs">
+      </div><!-- /col -->
+    </div> <!-- /row-->
+
+    <div class="row">
+      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+        <div class="subtitle" style="margin-left:30px;">
           Artists
         </div>
-        <img src="img/sculpture.png" style="display:block; width:100%;">
-        <p>
-          <span class="subtitle">Suat Ogut</span><br><br>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum pretium nunc, eu bibendum nulla dignissim vel. Fusce varius ut ipsum in elementum. Donec sed arcu et mi egestas pellentesque. Maecenas bibendum turpis urna, vitae imperdiet enim molestie ut. Nullam libero nisi, imperdiet nec tortor non, fermentum hendrerit dui. Phasellus volutpat mollis massa, at condimentum sapien rutrum ac. Nullam volutpat placerat massa, sit amet posuere diam ullamcorper quis. Donec rutrum ex lectus, nec vulputate lacus sodales nec. Nunc lobortis ante ac tortor tempor posuere. Pellentesque sollicitudin dui nunc, ac mollis felis pharetra vel. Nulla facilisi. Maecenas ac tellus lacus. Aenean mi velit, semper a neque eget, blandit venenatis ipsum. Aenean nulla tortor, eleifend sit amet turpis venenatis, maximus gravida ante. Proin lorem nibh, placerat ut quam eu, tincidunt interdum felis. In rutrum porta dolor vitae sollicitudin.
-        </p>
-      </div> <!-- /left -->
+      </div> <!-- /col -->
 
-      <div id="right" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-        <div class="title">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="subtitle" style="margin-left:30px;">
           Corporations
         </div>
-        <img src="img/rechtbank.png" style="display:block; width:100%;">
-        <p>
-          <span class="subtitle">De Rechtbank</span><br><br>
-          Nunc cursus libero a egestas bibendum. Sed orci augue, sollicitudin vel lacus a, consectetur posuere enim. Sed venenatis condimentum augue in gravida. Morbi libero sapien, cursus ac magna ac, mattis porta ex. Curabitur eget mauris mauris. Donec viverra ante risus, sed efficitur dolor fringilla non. Cras commodo ex non maximus tincidunt. Suspendisse tempus, justo a vestibulum cursus, ipsum metus iaculis lacus, sit amet congue urna ipsum quis ligula. In ultrices neque non facilisis gravida. Vivamus venenatis porta nulla, et auctor dui placerat eget. Suspendisse quis ante mauris
-        </p>
-      </div><!-- /right -->
+      </div><!-- /col -->
+      <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">
+      </div><!-- /col -->
     </div><!--row-->
 
     <div class="row">
-      <div id="left" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-        <p>
-          Artist #2<br><br>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum pretium nunc, eu bibendum nulla dignissim vel. Fusce varius ut ipsum in elementum. Donec sed arcu et mi egestas pellentesque. Maecenas bibendum turpis urna, vitae imperdiet enim molestie ut. Nullam libero nisi, imperdiet nec tortor non, fermentum hendrerit dui. Phasellus volutpat mollis massa, at condimentum sapien rutrum ac. Nullam volutpat placerat massa, sit amet posuere diam ullamcorper quis. Donec rutrum ex lectus, nec vulputate lacus sodales nec. Nunc lobortis ante ac tortor tempor posuere. Pellentesque sollicitudin dui nunc, ac mollis felis pharetra vel. Nulla facilisi. Maecenas ac tellus lacus. Aenean mi velit, semper a neque eget, blandit venenatis ipsum. Aenean nulla tortor, eleifend sit amet turpis venenatis, maximus gravida ante. Proin lorem nibh, placerat ut quam eu, tincidunt interdum felis. In rutrum porta dolor vitae sollicitudin.
+      <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs">
+      </div><!-- /col -->
+      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+          <p class="txt">
+            
+          </p>
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs">
+      </div><!-- /col -->
+    </div> <!-- /row-->
+
+    <div class="row">
+      <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">
+      </div><!-- /col -->
+      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+        <p class="name">
+          Jenny Lindblom
         </p>
-      </div> <!-- /left -->
-      <div id="right" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-        <p>
-          Corporation #2<br><br>
-          Nunc cursus libero a egestas bibendum. Sed orci augue, sollicitudin vel lacus a, consectetur posuere enim. Sed venenatis condimentum augue in gravida. Morbi libero sapien, cursus ac magna ac, mattis porta ex. Curabitur eget mauris mauris. Donec viverra ante risus, sed efficitur dolor fringilla non. Cras commodo ex non maximus tincidunt. Suspendisse tempus, justo a vestibulum cursus, ipsum metus iaculis lacus, sit amet congue urna ipsum quis ligula. In ultrices neque non facilisis gravida. Vivamus venenatis porta nulla, et auctor dui placerat eget. Suspendisse quis ante mauris
+      </div> <!-- /col -->
+
+      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+        <div class="name">
+          Gerrit Rietveld Academie & Sandberg Instituut
+        </div>
+        <p class="txt"> 
         </p>
-      </div><!-- /right -->
-    </div><!-- /row -->
+      </div><!-- /col -->
+      <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">
+      </div><!-- /col -->
+    </div><!--row-->
+
+    <div class="row">
+      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+        <p class="name" style="margin-left:30px;">
+          Martin Kaehler
+        </p>
+      </div> <!-- /col -->
+      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+        <div class="name" style="margin-left:30px;">
+          Provast Beheer
+        </div>
+        <p class="txt"> 
+        </p>
+      </div><!-- /col -->
+      <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs">
+      </div><!-- /col -->
+    </div><!--row-->
+
+    <div class="row">
+      <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">
+      </div><!-- /col -->
+      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+        <p class="name">
+          Suat Ogut
+        </p>
+      </div> <!-- /col -->
+
+      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+        <div class="name">
+          De Rechtbank Amsterdam
+        </div>
+        <p class="txt"> 
+        </p>
+      </div><!-- /col -->
+      <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">
+      </div><!-- /col -->
+    </div><!--row-->
+
+    <div class="row">
+      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+        <p class="name" style="margin-left:30px;">
+          Lennart Lahuis
+        </p>
+      </div> <!-- /col -->
+      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+        <div class="name" style="margin-left:30px;">
+          Dienst Zuidas Amsterdam
+        </div>
+        <p class="txt">  
+        </p>
+      </div><!-- /col -->
+      <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs">
+      </div><!-- /col -->
+    </div><!--row-->
+
+    <div class="row">
+      <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">
+      </div><!-- /col -->
+      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+        <p class="name">
+          Aimée Zito Lema<br>
+          Bram de Jonghe
+        </p>
+      </div> <!-- /col -->
+
+      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+        <div class="name">
+          G&S Vastgoed<br> 
+          ICON
+        </div>
+        <p class="txt"> 
+        </p>
+      </div><!-- /col -->
+      <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">
+      </div><!-- /col -->
+    </div><!--row-->
+
+    <div class="row">
+      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+        <p class="name" style="margin-left:30px;">
+          Hannae Wilke<br>
+          Victor Yudaev
+        </p>
+      </div> <!-- /col -->
+      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+        <div class="name" style="margin-left:30px;">
+          OVG Real Estate
+        </div>
+        <p class="txt"> 
+        </p>
+      </div><!-- /col -->
+      <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs">
+      </div><!-- /col -->
+    </div><!--row-->
+    <div class="row">
+      <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">
+      </div><!-- /col -->
+      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+        <p class="name">
+          Alice Ronchi
+        </p>
+      </div> <!-- /col -->
+
+      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+        <div class="name">
+          Nationale Postcode Loterij
+        </div>
+        <p class="txt"> 
+        </p>
+      </div><!-- /col -->
+      <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">
+      </div><!-- /col -->
+    </div><!--row-->
+
+    <div class="row">
+      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+        <p class="name" style="margin-left:30px;">
+          David Bernstein<br>
+          Rosa Sijben<br>
+          Styrmir Örn Guömundsson
+        </p>
+      </div> <!-- /col -->
+      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+        <div class="name" style="margin-left:30px;">
+          GET LOST - art route
+        </div>
+        <p class="txt"> 
+          
+        </p>
+      </div><!-- /col -->
+      <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs">
+      </div><!-- /col -->
+    </div><!--row-->
 
   </div><!--/wrap-->
+
+  <footer>
+
+      <div class="navbar navbar-fixed-bottom">
+          <div class="container">
+              <div class="navbar-collapse collapse" id="footer-body">
+                  <ul class="nav navbar-nav">
+                     <ul class="nav navbar-nav">
+                      <li><a href="program.html">Program</a></li>
+                      <li><a href="artroute.html">Art Route</a></li>
+                      <li class="active"><a href="#">Participants<span class="sr-only">(current)</span></a></li>
+                      <li><a href="visit.html">Visit</a></li>
+                      <li><a href="about.html">About</a></li>
+                    </ul>
+                  </ul>
+              </div>
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#footer-body">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  
+              </div>
+          </div>
+      </div>
+  </footer>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="js/bootstrap.js"></script>
