@@ -3,7 +3,6 @@
 	// elements
 	var graphWrapperElement = document.getElementById('graph-wrapper');
 	var graphElement = document.getElementById('graph');
-	var wrapElement = document.getElementById('wrap');
 	var programElement = document.getElementById('program');
 	var canvasWidth, canvasHeight, scale;
 
@@ -52,8 +51,6 @@
 		graphWrapperElement.setAttribute('style', styleAttribute);
 		if (programElement) {
 			programElement.style.height = canvasHeight + 'px';
-		} else {
-			wrapElement.setAttribute('style', 'padding-top: ' + canvasHeight + 'px;');
 		}
 	}
 
@@ -94,7 +91,12 @@
 	function drawLines (data) {
 
 		var length = data.aex.length;
-		var width = parseFloat(window.getComputedStyle(document.querySelector('.program-bar')).width);
+		var width;
+		if (document.querySelector('.program-bar')) {
+			width = parseFloat(window.getComputedStyle(document.querySelector('.program-bar')).width);
+		} else {
+			width = Math.ceil(canvasWidth / length);
+		}
 		var x = -1;
 		
 		// draw 
