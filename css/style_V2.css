@@ -184,6 +184,14 @@ button .btn, .btn{
 	margin: 0;
 	pointer-events: none;
 }
+@media(max-width: 768px) {
+	#graph-wrapper {
+		display: none;
+	}
+	#program {
+		display: none;
+	}
+}
 
 #program {
 	height: 600px;
