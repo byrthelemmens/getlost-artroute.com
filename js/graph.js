@@ -56,7 +56,6 @@
 
 	function draw (values) {
 
-
 		// graph
 		context.save();
 		context.beginPath();
@@ -70,19 +69,32 @@
 		// image
 		var img = new Image();
 		img.onload = function () {
+
+			function displayDate (dateString) {
+				var date = new Date(dateString);
+				var day = (date.getDate() + '').length === 2 ? date.getDate() : '0' + date.getDate();
+				var month = ((date.getMonth() + 1) + '').length === 2 ? date.getMonth() : '0' + date.getMonth();
+				return day + '.' + month + '.' + (date.getFullYear() + '').substr(2, 2);
+			}
+
 		    context.drawImage(img, 0, 0, canvasWidth, canvasHeight);
+
+		    var lastDay;
+			values.aex.forEach(function (day) {
+				if (day.value) {
+					lastDay = day;
+				}
+			});
 
 			// text AEX value
 			context.font = '14px Helvetica';
-			context.fillText('AEX', 15, 30);
-			context.font = 'bold 18px Helvetica';
-			var fillText;
-			values.aex.forEach(function (day) {
-				if (day.value) {
-					fillText = day.value;
-				}
-			});
-			context.fillText(parseFloat(fillText, 10).toFixed(2), 15, 50);
+			context.fillText('AEX', 15, 24);
+			context.font = '10px Helvetica';
+			context.fillText(displayDate(lastDay.date), 15, 40);
+			context.font = '10px Helvetica';
+			context.fillText('opening:', 15, 55);
+			context.font = '14px Helvetica';
+			context.fillText(parseFloat(lastDay.value, 10).toFixed(2), 15, 75);
 			context.restore();
 		}
 		img.src = '../img/img_graph04.png';
