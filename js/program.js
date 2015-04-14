@@ -56,7 +56,8 @@
 			day.events.forEach(function (event) {
 				var elem = document.createElement('span');
 				elem.classList.add('program-event');
-				elem.style.left = (index * (programElement.offsetWidth / json.aex.length)) + 'px';
+				// 5 is width circle + 1
+				elem.style.left = (index * parseFloat(window.getComputedStyle(document.querySelector('.program-bar')).width) - 5) + 'px';
 				elem.setAttribute('data-event-date', day.date);
 				elem.setAttribute('data-event-title', event.title);
 				elem.setAttribute('data-event-description', event.description);
