@@ -227,7 +227,8 @@
 			"events": [
 				{
 					"title": "Official Opening",
-					"description": "From 4p.m. to 9p.m. at the Strawinskylaan."
+					"description": "From 4p.m. to 9p.m. at the Strawinskylaan.",
+					"hash": "headerOne"
 				}	
 			]
 		},
@@ -560,7 +561,8 @@
 			"events": [
 				{
 					"title": "Finnissage",
-					"description": "Festive events to close the art route."
+					"description": "Festive events to close the art route.",
+					"hash": "headerFour"
 				}	
 			]
 		},

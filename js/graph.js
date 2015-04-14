@@ -94,7 +94,7 @@
 	function drawLines (data) {
 
 		var length = data.aex.length;
-		var width = Math.ceil(canvasWidth / length);
+		var width = parseFloat(window.getComputedStyle(document.querySelector('.program-bar')).width);
 		var x = 0;
 		
 		// draw 
