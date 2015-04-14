@@ -115,6 +115,9 @@ h2{
 	margin-top:35%; /*percentage? of variable in samenhang met de grafiek?*/
 	z-index:999;
 }
+.program img{
+	margin-top:50% !important;
+}
 .subtitle{
 	margin:0 0 25px 0;
 	font-size:50px;
