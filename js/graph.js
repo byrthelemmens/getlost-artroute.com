@@ -14,8 +14,7 @@ var minValue = 350, maxValue = 900;
 
 setCanvasDimensions();
 
-var url = 'data/aex.php'; 
-//var url = 'data/aex.json'; 
+var url = 'data/aex_generated.json'; 
 var values;
 
 $.getJSON(url, function (data) {
