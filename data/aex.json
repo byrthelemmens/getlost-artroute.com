@@ -40,7 +40,13 @@
 			"date": "2015-04-13"
 		},
 		{
-			"date": "2015-04-14"
+			"date": "2015-04-14",
+			"events": [
+				{
+					"title": "Artists are announced",
+					"description": "The corporations made their decisions. The following artists will participate in the GET LOST - art route: Jenny Lindblom, Martin Kaehler, Suat Ogut, Lennart Lahuis, Aimee Zito Lema, Bram de Jonghe, Hannae Wilke, Alice Ronchi, David Bernstein."
+				}	
+			]
 		},
 		{
 			"date": "2015-04-15"
@@ -220,16 +226,28 @@
 			"date": "2015-06-12",
 			"events": [
 				{
-					"title": "opening",
-					"description": "Lorem Ipsum Dollar et Simet"
+					"title": "Official Opening",
+					"description": "From 4p.m. to 9p.m. at the Strawinskylaan."
 				}	
 			]
 		},
 		{
-			"date": "2015-06-13"
+			"date": "2015-06-13",
+			"events": [
+				{
+					"title": "Festive Opening Weekend",
+					"description": ""
+				}	
+			]
 		},
 		{
-			"date": "2015-06-14"
+			"date": "2015-06-14",
+			"events": [
+				{
+					"title": "Festive Opening Weekend",
+					"description": ""
+				}	
+			]
 		},
 		{
 			"date": "2015-06-15"
@@ -541,8 +559,8 @@
 			"date": "2015-09-25",
 			"events": [
 				{
-					"title": "finnissage",
-					"description": "Lorem Ipsum Dollar et Simet"
+					"title": "Finnissage",
+					"description": "Festive events to close the art route."
 				}	
 			]
 		},
