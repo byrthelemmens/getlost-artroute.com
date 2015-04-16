@@ -64,7 +64,8 @@
             ]
         },
         {
-            "date": "2015-04-15"
+            "date": "2015-04-15",
+            "value": 505.86
         },
         {
             "date": "2015-04-16"
@@ -244,14 +245,29 @@
                     "title": "Official Opening",
                     "description": "",
                     "hash": "headingTwo"
+
                 }
             ]
         },
         {
-            "date": "2015-06-13"
+            "date": "2015-06-13",
+            "events": [
+                {
+                    "title": "Festive Opening Weekend",
+                    "description": "",
+                    "hash": "headingThree"
+                }
+            ]
         },
         {
-            "date": "2015-06-14"
+            "date": "2015-06-14",
+            "events": [
+                {
+                    "title": "Festive Opening Weekend",
+                    "description": "",
+                    "hash": "headingThree"
+                }
+            ]
         },
         {
             "date": "2015-06-15"
@@ -563,8 +579,8 @@
             "date": "2015-09-25",
             "events": [
                 {
-                    "title": "finnissage",
-                    "description": "Lorem Ipsum Dollar et Simet",
+                    "title": "Finnissage",
+                    "description": "Festive events to close the art route.",
                     "hash": "headingFour"
                 }
             ]
