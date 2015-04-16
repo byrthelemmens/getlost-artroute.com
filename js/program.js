@@ -74,7 +74,7 @@
 		var title = event.currentTarget.getAttribute('data-event-title');
 		var description = event.currentTarget.getAttribute('data-event-description');
 		var hash = event.currentTarget.getAttribute('data-event-hash');
-		eventDataElement.innerHTML = '<h1>' + date + ': ' + title + '</h1><p>' + description + '</p><a class="program-more" href="#' + hash + '">Lees meer</a>';
+		eventDataElement.innerHTML = '<h1>' + date + ': ' + title + '</h1><p>' + description + '</p><a class="program-more" href="#' + hash + '">read more</a>';
 
 		var left = parseInt(event.currentTarget.style.left, 10)
 		var programElementWidth = programElement.offsetWidth;

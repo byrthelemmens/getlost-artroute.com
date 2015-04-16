@@ -54,7 +54,14 @@
         },
         {
             "date": "2015-04-14",
-            "value": 508.66
+            "value": 508.66,
+            "events": [
+                {
+                    "title": "Artists announced",
+                    "description": "",
+                    "hash": "headingOne"
+                }
+            ]
         },
         {
             "date": "2015-04-15"
@@ -234,9 +241,9 @@
             "date": "2015-06-12",
             "events": [
                 {
-                    "title": "opening",
-                    "description": "Lorem Ipsum Dollar et Simet",
-                    "hash": "headingOne"
+                    "title": "Official Opening",
+                    "description": "",
+                    "hash": "headingTwo"
                 }
             ]
         },
