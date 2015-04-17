@@ -24,7 +24,7 @@ a:hover{color:blue;}
 a:visited{color:black;}
 #wrap{
 	background-color: #Fff;
-	margin-left:40px;
+	/* margin-left:40px; */
 	padding:0 0 150px 0;
 
 }
@@ -80,8 +80,6 @@ a:visited{color:black;}
 	background-position: 0 -40px;
 }
 
-
-
 /* T E X T  S T Y L E S */
 
 .introtxt{
@@ -115,7 +113,7 @@ h2{
 /* T I T L E S */
 #pagetitle img{
 	height:5em; 
-	margin-top:35%; /*percentage? of variable in samenhang met de grafiek?*/
+	margin-top:30%; /*percentage? of variable in samenhang met de grafiek?*/
 	z-index:999;
 }
 .program img{
@@ -159,26 +157,35 @@ button .btn, .btn{
 	border-bottom: 1px solid blue;
 	border-radius: 0 !important;
 	margin:20px 0;
+	letter-spacing: 0.05em;
 }
 
 /* P A N E L  S T Y L E S */
 .panel{
-	background-color: #EEEEEE !important;
 	border-bottom: 1px solid black;
 	border-radius: 0 !important;
 
 }
-.panel-heading{
-
+.milestone{
+	border-bottom:3px solid #E8A723 !important;
 }
+.evenement{
+	border-bottom:3px solid #ffcc00 !important;
+}
+
 .panel-title{
 	font-size:1em;
 }
 .panel-collapse .panel-body{
-	border-top:1px solid black !important;
-	background-color: #ccc;
+	border-top:3px solid #FFCC00 !important;
+	background-color: #eee;
 
 }
+.milestone .panel-collapse .panel-body{
+	border-top:1px solid #E8A723 !important;
+
+}
+
 
 /* G R A P H  S T Y L E S */
 #graph-wrapper {

@@ -21,7 +21,7 @@ a:visited{color:black;}
 	}
 }
 .row{
-	margin-top:50px;
+	margin-top:25px;
 }
 .firstrow{
 	margin-top:0px;
@@ -112,14 +112,17 @@ h2{
 
 /* B U T T O N S */
 button .btn, .btn{
-	background-color: #EEEEEE !important;
-	border-bottom: 1px solid blue;
+	background-color: #ccc !important;
+	border-bottom: 1px solid #000;
 	border-radius: 0 !important;
+	letter-spacing: 0.05em;
+	float: left;
+	display: inline-block;
 }
 
 /* P A N E L  S T Y L E S */
 .panel{
-	background-color: #EEEEEE !important;
+	background-color: #ffcc00 !important;
 	border-bottom: 1px solid black;
 	border-radius: 0 !important;
 
@@ -132,5 +135,5 @@ button .btn, .btn{
 }
 .panel-collapse .panel-body{
 	border-top:1px solid black !important;
-	background-color: #ffcc00;
+	background-color: #ccc;
 }

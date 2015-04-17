@@ -56,9 +56,9 @@
             "date": "2015-04-14",
             "events": [
                 {
-                    "title": "Artists are announced",
-                    "description": "The corporations made their decisions. The following artists will participate in the GET LOST - art route: Jenny Lindblom, Martin Kaehler, Suat Ogut, Lennart Lahuis, Aimee Zito Lema, Bram de Jonghe, Hannae Wilke, Alice Ronchi, David Bernstein.",
-                    "hash": "headingFour",
+                    "title": "Artists Announced",
+                    "description": "",
+                    "hash": "headingTwo",
                     "type": "milestone"
                 }
             ],
@@ -246,8 +246,8 @@
             "events": [
                 {
                     "title": "Official Opening",
-                    "description": "From 4p.m. to 9p.m. at the Strawinskylaan.",
-                    "hash": "headingOne",
+                    "description": "",
+                    "hash": "headingThree",
                     "type": "event"
                 }
             ]
@@ -258,7 +258,7 @@
                 {
                     "title": "Festive Opening Weekend",
                     "description": "",
-                    "hash": "headingTwo",
+                    "hash": "headingFour",
                     "type": "event"
                 }
             ]
@@ -269,7 +269,7 @@
                 {
                     "title": "Festive Opening Weekend",
                     "description": "",
-                    "hash": "headingThree",
+                    "hash": "headingFour",
                     "type": "event"
                 }
             ]
@@ -585,8 +585,8 @@
             "events": [
                 {
                     "title": "Finnissage",
-                    "description": "Festive events to close the art route.",
-                    "hash": "headingFour",
+                    "description": "",
+                    "hash": "headingFive",
                     "event": "event"
                 }
             ]
