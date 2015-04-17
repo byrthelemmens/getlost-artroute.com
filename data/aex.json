@@ -45,7 +45,8 @@
 				{
 					"title": "Artists are announced",
 					"description": "The corporations made their decisions. The following artists will participate in the GET LOST - art route: Jenny Lindblom, Martin Kaehler, Suat Ogut, Lennart Lahuis, Aimee Zito Lema, Bram de Jonghe, Hannae Wilke, Alice Ronchi, David Bernstein.",
-					"hash": "headingFour"
+					"hash": "headingFour",
+					"type": "milestone"
 				}	
 			]
 		},
@@ -229,7 +230,8 @@
 				{
 					"title": "Official Opening",
 					"description": "From 4p.m. to 9p.m. at the Strawinskylaan.",
-					"hash": "headingOne"
+					"hash": "headingOne",
+					"type": "event"
 				}	
 			]
 		},
@@ -239,7 +241,8 @@
 				{
 					"title": "Festive Opening Weekend",
 					"description": "",
-					"hash": "headingTwo"
+					"hash": "headingTwo",
+					"type": "event"
 				}	
 			]
 		},
@@ -249,7 +252,8 @@
 				{
 					"title": "Festive Opening Weekend",
 					"description": "",
-					"hash": "headingThree"
+					"hash": "headingThree",
+					"type": "event"
 				}	
 			]
 		},
@@ -565,7 +569,8 @@
 				{
 					"title": "Finnissage",
 					"description": "Festive events to close the art route.",
-					"hash": "headingFour"
+					"hash": "headingFour",
+					"event": "event"
 				}	
 			]
 		},

@@ -54,24 +54,27 @@
         },
         {
             "date": "2015-04-14",
-            "value": 508.66,
             "events": [
                 {
-                    "title": "Artists announced",
-                    "description": "",
-                    "hash": "headingOne"
+                    "title": "Artists are announced",
+                    "description": "The corporations made their decisions. The following artists will participate in the GET LOST - art route: Jenny Lindblom, Martin Kaehler, Suat Ogut, Lennart Lahuis, Aimee Zito Lema, Bram de Jonghe, Hannae Wilke, Alice Ronchi, David Bernstein.",
+                    "hash": "headingFour",
+                    "type": "milestone"
                 }
-            ]
+            ],
+            "value": 508.66
         },
         {
             "date": "2015-04-15",
             "value": 505.86
         },
         {
-            "date": "2015-04-16"
+            "date": "2015-04-16",
+            "value": 507.43
         },
         {
-            "date": "2015-04-17"
+            "date": "2015-04-17",
+            "value": 504.38
         },
         {
             "date": "2015-04-18"
@@ -243,9 +246,9 @@
             "events": [
                 {
                     "title": "Official Opening",
-                    "description": "",
-                    "hash": "headingTwo"
-
+                    "description": "From 4p.m. to 9p.m. at the Strawinskylaan.",
+                    "hash": "headingOne",
+                    "type": "event"
                 }
             ]
         },
@@ -255,7 +258,8 @@
                 {
                     "title": "Festive Opening Weekend",
                     "description": "",
-                    "hash": "headingThree"
+                    "hash": "headingTwo",
+                    "type": "event"
                 }
             ]
         },
@@ -265,7 +269,8 @@
                 {
                     "title": "Festive Opening Weekend",
                     "description": "",
-                    "hash": "headingThree"
+                    "hash": "headingThree",
+                    "type": "event"
                 }
             ]
         },
@@ -581,7 +586,8 @@
                 {
                     "title": "Finnissage",
                     "description": "Festive events to close the art route.",
-                    "hash": "headingFour"
+                    "hash": "headingFour",
+                    "event": "event"
                 }
             ]
         },
