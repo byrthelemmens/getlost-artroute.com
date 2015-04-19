@@ -214,7 +214,7 @@ button .btn, .btn{
 	height: 100%;
 	width: 4px;
 	background: white;
-	border-right: solid 1px #DDD;
+	border-left: solid 1px #DDD;
 	float: left;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -222,7 +222,7 @@ button .btn, .btn{
 }
 
 #program .program-bar:hover {
-	border-right: solid 1px black;
+	border-left: solid 1px black;
 	cursor: pointer;
 }
 

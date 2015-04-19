@@ -39,14 +39,27 @@
 		json.aex.forEach(addDayEvents);
 	}
 
-	function addDayBar (day) {
+	function addDayBar (day, positionLeft) {
 
 		// bar
 		var div = document.createElement('div');
 		div.classList.add('program-bar');
 		var percentage = 100 / json.aex.length;
 		div.style.width = percentage + '%';
-		programElement.insertBefore(div, programElement.firstChild);
+
+		// events mouseover
+		if (typeof day.events !== 'undefined' && day.events.length) {
+			day.events.forEach(function (event) {
+
+				div.setAttribute('data-event-date', day.date);
+				div.setAttribute('data-event-title', event.title);
+				div.setAttribute('data-event-hash', event.hash);
+				div.setAttribute('data-event-type', event.type);
+				div.addEventListener('mouseover', mouseoverHandler);
+			});
+		}
+
+		programElement.insertBefore(div, monthsElement);
 	}
 
 	function addDayEvents (day, index) {
@@ -56,11 +69,14 @@
 			day.events.forEach(function (event) {
 
 				var elem = document.createElement('span');
+				var positionLeft;
 
 				// position
 				elem.classList.add('program-event');
-				// 5 is width circle + 1
-				elem.style.left = (index * parseFloat(window.getComputedStyle(document.querySelector('.program-bar')).width) - 5) + 'px';
+
+				positionLeft = index * parseFloat(window.getComputedStyle(document.querySelector('.program-bar')).width)
+				// 4 == radius circle
+				elem.style.left = (positionLeft - 4) + 'px';
 
 				// color
 				elem.style.backgroundColor = event.type === 'milestone' ? '#E8A60C' : '#FFCC00';
@@ -82,13 +98,21 @@
 
 	function mouseoverHandler (event) {
 
+		var element = event.currentTarget;
+
 		var date = displayDate(event.currentTarget.getAttribute('data-event-date'));
 		var title = event.currentTarget.getAttribute('data-event-title');
 		var hash = event.currentTarget.getAttribute('data-event-hash');
 		eventDataElement.innerHTML = '<h1><a class="program-more" href="#' + hash + '">' + date + ':<br>' + title + '</a></h1>';
 
 		// position
-		var left = parseInt(event.currentTarget.style.left, 10)
+		//var left = parseInt(event.currentTarget.getAttribute('data-event-position-left'), 10);
+		// 40 == left border
+		var left = element.getBoundingClientRect().left - 40;
+		if (element.className === 'program-bar') {
+			// 4 == radius cirkel
+			left -= 4;
+		}
 		var programElementWidth = programElement.offsetWidth;
 		var eventDataElementWidth = eventDataElement.offsetWidth;
 		left = left > programElementWidth - eventDataElementWidth ? programElementWidth - eventDataElementWidth : left;

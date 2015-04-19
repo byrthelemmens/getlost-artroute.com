@@ -102,7 +102,7 @@
 		} else {
 			width = Math.ceil(canvasWidth / length);
 		}
-		var x = -1;
+		var x = 0;
 		
 		// get last date
 		var lastDate;
