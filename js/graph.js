@@ -84,10 +84,19 @@
 			context.fillText('AEX', 15, 24);
 			context.font = '10px Helvetica';
 			context.fillText(displayDate(lastDay.date), 15, 40);
-			context.font = '10px Helvetica';
-			context.fillText('opening:', 15, 55);
-			context.font = '14px Helvetica';
-			context.fillText(parseFloat(lastDay.value, 10).toFixed(2), 15, 75);
+			var day = (new Date()).getDay();
+			// weekend
+			if (day === 0 || day === 6) {
+				context.font = '10px Helvetica';
+				context.fillText('closed', 15, 55);
+			} 
+			// week day 
+			else {
+				context.font = '10px Helvetica';
+				context.fillText('opening:', 15, 55);
+				context.font = '14px Helvetica';
+				context.fillText(parseFloat(lastDay.value, 10).toFixed(2), 15, 75);
+			}
 			context.restore();
 		}
 		img.src = '../img/img_graph04.png';
