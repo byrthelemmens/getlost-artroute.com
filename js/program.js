@@ -68,7 +68,6 @@
 				// data
 				elem.setAttribute('data-event-date', day.date);
 				elem.setAttribute('data-event-title', event.title);
-				elem.setAttribute('data-event-description', event.description);
 				elem.setAttribute('data-event-hash', event.hash);
 				elem.setAttribute('data-event-type', event.type);
 
@@ -85,9 +84,8 @@
 
 		var date = displayDate(event.currentTarget.getAttribute('data-event-date'));
 		var title = event.currentTarget.getAttribute('data-event-title');
-		var description = event.currentTarget.getAttribute('data-event-description');
 		var hash = event.currentTarget.getAttribute('data-event-hash');
-		eventDataElement.innerHTML = '<h1><a class="program-more" href="#' + hash + '">' + date + ':<br>' + title + '</a></h1><p>' + description + '</p>';
+		eventDataElement.innerHTML = '<h1><a class="program-more" href="#' + hash + '">' + date + ':<br>' + title + '</a></h1>';
 
 		// position
 		var left = parseInt(event.currentTarget.style.left, 10)
