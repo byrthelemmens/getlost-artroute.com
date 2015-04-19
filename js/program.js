@@ -107,8 +107,7 @@
 
 		// position
 		//var left = parseInt(event.currentTarget.getAttribute('data-event-position-left'), 10);
-		// 40 == left border
-		var left = element.getBoundingClientRect().left - 40;
+		var left = element.getBoundingClientRect().left;
 		if (element.className === 'program-bar') {
 			// 4 == radius cirkel
 			left -= 4;
