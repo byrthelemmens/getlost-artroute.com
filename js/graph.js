@@ -104,16 +104,22 @@
 		}
 		var x = -1;
 		
+		// get last date
+		var lastDate;
+		data.aex.forEach(function (row) {
+			if (row.value) {
+				lastDate = row.date;
+			}
+		});
+
 		// draw 
 		data.aex.forEach(function (row) {
 			var value = row.value;
 			var height;
-			if (new Date(row.date) > new Date('06-22-2015')) {
-				value = undefined;
-			}
+
 			if (value) {
 				drawLine(x, getHeight(value));
-			} else {
+			} else if (new Date(row.date) > new Date(lastDate)) {
 				drawLine(x - width, getHeight(maxValue));
 				drawLine(x, getHeight(maxValue));
 			}
