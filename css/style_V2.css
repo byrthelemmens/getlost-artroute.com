@@ -8,9 +8,11 @@ body {
 	font-size:1.5em;	
 	text-align: left;
 }
-a{color:black;}
-a:hover{color:blue;}
-a:visited{color:black;}
+a{color:black;text-decoration: none;}
+a:hover{color:#E8A723; text-decoration: none;}
+a:active{color:#E8A723; text-decoration: none;}
+a:visited{color:black; text-decoration: none;}
+
 #wrap{
 	background-color: #Fff;
 	/* margin-left:40px; */
@@ -202,7 +204,7 @@ h2{
 /* B U T T O N S */
 button .btn, .btn{
 	background-color: #EEEEEE !important;
-	border-bottom: 1px solid blue;
+	border-bottom: 2px solid #E8A723;
 	border-radius: 0 !important;
 	margin:20px 0;
 	letter-spacing: 0.05em;
@@ -318,7 +320,7 @@ button .btn, .btn{
 	width: 160px;
 }
 #program .program-event-data h1 {
-	font-size: 16px;
+	font-size: 14px;
 }
 #program .program-event-data p {
 	font-size: 12px;
