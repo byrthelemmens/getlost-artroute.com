@@ -35,7 +35,7 @@
 	}
 
 	function setCanvasDimensions () {
-		var height = Math.round((graphWrapperElement.offsetWidth / 1920) * 550) + 'px';
+		var height = Math.round((window.innerWidth / 1920) * 550) + 'px';
 		graphWrapperElement.setAttribute('style', 'height: ' + height + ';');
 		canvasWidth = graphElement.width = graphWrapperElement.offsetWidth;
 		canvasHeight = graphElement.height = graphWrapperElement.offsetHeight;
