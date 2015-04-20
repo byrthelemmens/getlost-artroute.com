@@ -1,18 +1,7 @@
 body { 
 	margin:0;
 	padding:0;
-	background-image: -webkit-gradient(
-		linear,
-		left bottom,
-		left top,
-		color-stop(0, #FFFFFF),
-		color-stop(1, #FFCC00)
-		);
-		background-image: -o-linear-gradient(top, #FFFFFF 0%, #000 100%);
-		background-image: -moz-linear-gradient(top, #FFFFFF 0%, #000 100%);
-		background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #000 100%);
-		background-image: -ms-linear-gradient(top, #FFFFFF 0%, #000 100%);
-		background-image: linear-gradient(to top, #FFFFFF 0%, #000 100%);
+	background-color:#ffffff;
 	overflow-x: hidden;
 	font-family: arial, sans-serif;
 	letter-spacing: 0.05em;
@@ -31,7 +20,7 @@ a:visited{color:black;}
 /* COL XS */
 @media (max-width: 767px) {
 	#wrap{		
-		background-color:green !important;
+		overflow-x: hidden;
 	}
 	.col-xs-12{
 		padding:0 50px;
@@ -52,19 +41,25 @@ a:visited{color:black;}
 /* COL SM */
 @media (min-width: 768px) and (max-width: 991px) { 
 	#wrap{
-		background-color:blue;
+	}
+	.col-sm-6{
+		padding: 0 20px;
+	}
+	.col-sm-4{
+		padding:0 30px;
+	}
+	.extrapad{
+		margin:0 40px;
 	}
 }
 /* COL MD */
 @media (min-width: 992px) and (max-width: 1199px) {
 	#wrap{
-		background-color:red;
 	}
 }
 /* COL LG */
 @media (min-width: 1200px) {
 	#wrap{
-		background-color:yellow;
 	}
 }
 .row{
@@ -248,7 +243,8 @@ button .btn, .btn{
 	margin: 0;
 	pointer-events: none;
 }
-@media(max-width: 768px) {
+
+@media (max-width: 767px) {
 	#graph-wrapper {
 		display: none;
 	}
