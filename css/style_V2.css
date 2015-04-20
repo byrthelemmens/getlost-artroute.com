@@ -31,7 +31,6 @@ a:visited{color:black;}
 /* breaking point */
 @media(max-width:1200px) {
 	#wrap{
-		margin-left:20px;
 		padding:0 0 150px 0;
 	}
 }
@@ -55,6 +54,21 @@ a:visited{color:black;}
 	width:85%;
 	margin-bottom:40px;
 }
+.logo{
+	height:30px;
+	margin-right:10px;
+	margin-bottom:10px;
+}
+.logo2{
+	height:40px;
+	margin-right:10px;
+	margin-bottom:10px;
+}
+.logo3{
+	height:55px;
+	margin-bottom:10px;
+}
+
 .twitter, .facebook, .instagram{
 	width:40px;
 	height: 40px;

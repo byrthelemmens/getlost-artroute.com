@@ -6,6 +6,14 @@
         },
         {
             "date": "2015-04-02",
+            "events": [
+                {
+                    "title": "Participating Corporations Announced",
+                    "description": "",
+                    "hash": "headingOne",
+                    "type": "milestone"
+                }
+            ],
             "value": 491.01
         },
         {
