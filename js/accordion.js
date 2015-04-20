@@ -14,7 +14,8 @@ $(function () {
 
 		    // correct scrolling
 		    window.setTimeout(function () {
-		    	window.scrollBy(0, -160);
+		    	var y = parseInt(window.getComputedStyle(document.getElementById('graph-wrapper')).height, 10) - 140;
+		    	window.scrollBy(0, -y);
 		    }, 1);
 		}
 	});
