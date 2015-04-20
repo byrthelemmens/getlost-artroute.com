@@ -11,6 +11,11 @@ $(function () {
 			hash = 'collapse' + hash;
 			$panelCollapse.removeClass('in');
 		    $('#' + hash).addClass('in');
+
+		    // correct scrolling
+		    window.setTimeout(function () {
+		    	window.scrollBy(0, -160);
+		    }, 1);
 		}
 	});
 });
