@@ -156,34 +156,6 @@ a:visited{color:black; text-decoration: none;}
 	letter-spacing: 1;
 	padding:0 20px;
 }
-.titletron p{
-	margin:30px;
-	padding:0;
-	top:200px;
-	position: relative;
-	z-index: 700;
-	font-size: 5em;
-	color:#000;
-}
-.titletron img{
-	height:50px;
-	margin:30px;
-	padding:0;
-	border-bottom:4px solid black;
-	top:0;
-	position: relative;
-	z-index: 900;
-}
-.tron img{
-	width:100%;
-	height:auto;
-	margin:0;
-	padding:0;
-	top:0;
-	opacity: 0.99;
-	position: fixed;
-	z-index: 800;
-}
 button .btn, .btn{
 	background-color: #EEEEEE !important;
 	border-bottom: 1px solid blue;
@@ -196,7 +168,7 @@ button .btn, .btn{
 }
 .panel{
 	background-color: #EEEEEE !important;
-	border-bottom: 1px solid blue;
+	border-bottom: 1px solid #
 	border-radius: 0 !important;
 }
 .panel-heading{
