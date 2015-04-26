@@ -83,8 +83,9 @@
 			context.font = '14px Helvetica';
 			context.fillText('AEX', 15, 24);
 			context.font = '10px Helvetica';
-			context.fillText(displayDate(lastDay.date), 15, 40);
-			var day = (new Date()).getDay();
+			var today = new Date();
+			var day = today.getDay();
+			context.fillText(displayDate(today), 15, 40);
 			// weekend
 			if (day === 0 || day === 6) {
 				context.font = '10px Helvetica';
