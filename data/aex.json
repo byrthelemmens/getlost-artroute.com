@@ -51,7 +51,7 @@
 			"events": [
 				{
 					"title": "Artists are announced",
-					"hash": "headingFour",
+					"hash": "headingTwo",
 					"type": "milestone"
 				}	
 			]
@@ -235,7 +235,7 @@
 			"events": [
 				{
 					"title": "Official Opening",
-					"hash": "headingOne",
+					"hash": "headingThree",
 					"type": "event"
 				}	
 			]
@@ -245,7 +245,7 @@
 			"events": [
 				{
 					"title": "Festive Opening Weekend",
-					"hash": "headingTwo",
+					"hash": "headingFour",
 					"type": "event"
 				}	
 			]
@@ -255,7 +255,7 @@
 			"events": [
 				{
 					"title": "Festive Opening Weekend",
-					"hash": "headingThree",
+					"hash": "headingFour",
 					"type": "event"
 				}	
 			]
@@ -571,7 +571,7 @@
 			"events": [
 				{
 					"title": "Finnissage",
-					"hash": "headingFour",
+					"hash": "headingFive",
 					"event": "event"
 				}	
 			]

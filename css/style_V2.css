@@ -304,10 +304,14 @@ button .btn, .btn{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+
 }
 
 #program .program-bar:hover {
-	border-left: solid 1px black;
+	border-left: 1px solid black;	
+}
+
+#program .program-bar-clickable:hover {
 	cursor: pointer;
 }
 
@@ -339,8 +343,10 @@ button .btn, .btn{
 	height: 8px;
 	display: block;
 	border-radius: 4px;
-	background: red;
 	z-index: 8;
+}
+#program .program-event:hover, #program .program-event.over {
+	background-color: black !important;
 }
 #program .program-event-data {
 	height: 74px;

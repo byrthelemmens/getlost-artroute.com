@@ -51,11 +51,15 @@
 		if (typeof day.events !== 'undefined' && day.events.length) {
 			day.events.forEach(function (event) {
 
+				div.classList.add('program-bar-clickable');
+
 				div.setAttribute('data-event-date', day.date);
 				div.setAttribute('data-event-title', event.title);
 				div.setAttribute('data-event-hash', event.hash);
 				div.setAttribute('data-event-type', event.type);
 				div.addEventListener('mouseover', mouseoverHandler);
+				div.addEventListener('mouseout', mouseoutHandler);
+				div.addEventListener('click', clickHandler);
 			});
 		}
 
@@ -89,6 +93,8 @@
 
 				// event listener
 				elem.addEventListener('mouseover', mouseoverHandler);
+				elem.addEventListener('mouseout', mouseoutHandler);
+				elem.addEventListener('click', clickHandler);
 
 				// append to DOM
 				monthsElement.appendChild(elem);
@@ -117,5 +123,26 @@
 		left = left > programElementWidth - eventDataElementWidth ? programElementWidth - eventDataElementWidth : left;
 		eventDataElement.style.left = left + 'px';
 
+		// color line and cirkel
+		Array.prototype.forEach.call(document.querySelectorAll('[data-event-hash="' + hash + '"]'), function (elem) {
+			elem.classList.add('over');
+		});
 	}
+
+	function mouseoutHandler (event) {
+
+		var element = event.currentTarget;
+		var hash = event.currentTarget.getAttribute('data-event-hash');
+		Array.prototype.forEach.call(document.querySelectorAll('[data-event-hash="' + hash + '"]'), function (elem) {
+			elem.classList.remove('over');
+		});
+	}
+
+	function clickHandler (event) {
+
+		var element = event.currentTarget;
+		var hash = event.currentTarget.getAttribute('data-event-hash');
+		window.location = window.location.origin + window.location.pathname + '#' + hash;
+	}
+
 }());
