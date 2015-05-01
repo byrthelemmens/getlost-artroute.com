@@ -9,7 +9,6 @@
             "events": [
                 {
                     "title": "Participating Corporations Announced",
-                    "description": "",
                     "hash": "headingOne",
                     "type": "milestone"
                 }
@@ -60,8 +59,7 @@
             "date": "2015-04-14",
             "events": [
                 {
-                    "title": "Artists Announced",
-                    "description": "",
+                    "title": "Artists are announced",
                     "hash": "headingTwo",
                     "type": "milestone"
                 }
@@ -87,19 +85,24 @@
             "date": "2015-04-19"
         },
         {
-            "date": "2015-04-20"
+            "date": "2015-04-20",
+            "value": 497.28
         },
         {
-            "date": "2015-04-21"
+            "date": "2015-04-21",
+            "value": 504.8
         },
         {
-            "date": "2015-04-22"
+            "date": "2015-04-22",
+            "value": 507.55
         },
         {
-            "date": "2015-04-23"
+            "date": "2015-04-23",
+            "value": 503.65
         },
         {
-            "date": "2015-04-24"
+            "date": "2015-04-24",
+            "value": 504.07
         },
         {
             "date": "2015-04-25"
@@ -108,22 +111,27 @@
             "date": "2015-04-26"
         },
         {
-            "date": "2015-04-27"
+            "date": "2015-04-27",
+            "value": 504.45
         },
         {
-            "date": "2015-04-28"
+            "date": "2015-04-28",
+            "value": 507.79
         },
         {
-            "date": "2015-04-29"
+            "date": "2015-04-29",
+            "value": 502.25
         },
         {
-            "date": "2015-04-30"
+            "date": "2015-04-30",
+            "value": 490.03
         },
         {
             "date": "2015-04-31"
         },
         {
-            "date": "2015-05-01"
+            "date": "2015-05-01",
+            "value": 490.03
         },
         {
             "date": "2015-05-02"
@@ -250,7 +258,6 @@
             "events": [
                 {
                     "title": "Official Opening",
-                    "description": "",
                     "hash": "headingThree",
                     "type": "event"
                 }
@@ -261,7 +268,6 @@
             "events": [
                 {
                     "title": "Festive Opening Weekend",
-                    "description": "",
                     "hash": "headingFour",
                     "type": "event"
                 }
@@ -272,7 +278,6 @@
             "events": [
                 {
                     "title": "Festive Opening Weekend",
-                    "description": "",
                     "hash": "headingFour",
                     "type": "event"
                 }
@@ -589,7 +594,6 @@
             "events": [
                 {
                     "title": "Finnissage",
-                    "description": "",
                     "hash": "headingFive",
                     "event": "event"
                 }

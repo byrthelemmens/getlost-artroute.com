@@ -1,14 +1,13 @@
 $(function () {
 
-	$(document).on( "click", ".program-more", function (event) {
+	function setAccordion () {
 
-		$panelCollapse = $('.panel-collapse')
-
-		var hash = $(event.target).attr('href');
+		var hash = window.location.hash;
 
 		if (hash.match('#heading')) {
 			var hash = hash.split('#heading')[1];
 			hash = 'collapse' + hash;
+			$panelCollapse = $('.panel-collapse')
 			$panelCollapse.removeClass('in');
 		    $('#' + hash).addClass('in');
 
@@ -18,5 +17,9 @@ $(function () {
 		    	window.scrollBy(0, -y);
 		    }, 1);
 		}
-	});
+	}
+
+	window.addEventListener('hashchange', setAccordion, false);
+
+	setAccordion();
 });
