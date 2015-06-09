@@ -261,7 +261,14 @@
             "value": 481.74
         },
         {
-            "date": "2015-06-06"
+            "date": "2015-06-06",
+            "events": [
+                {
+                    "title": "Building up artworks",
+                    "hash": "headingSeven",
+                    "type": "milestone"
+                }   
+            ]
         },
         {
             "date": "2015-06-07"
@@ -270,15 +277,16 @@
             "date": "2015-06-08",
             "events": [
                 {
-                    "title": "Start building up the artworks",
-                    "hash": "headingSeven",
+                    "title": "Pre-opening stunt",
+                    "hash": "headingNine",
                     "type": "milestone"
                 }   
             ],
             "value": 479.42
         },
         {
-            "date": "2015-06-09"
+            "date": "2015-06-09",
+            "value": 473.56
         },
         {
             "date": "2015-06-10"
@@ -357,7 +365,14 @@
             "date": "2015-06-25"
         },
         {
-            "date": "2015-06-26"
+            "date": "2015-06-26",
+            "events": [
+                {
+                    "title": "Zuidas Culinair",
+                    "hash": "headingTen",
+                    "type": "event"
+                }   
+            ]
         },
         {
             "date": "2015-06-27"
@@ -399,7 +414,14 @@
             "date": "2015-07-08"
         },
         {
-            "date": "2015-07-09"
+            "date": "2015-07-09",
+             "events": [
+                {
+                    "title": "Guided tour real estate corporations & discussion",
+                    "hash": "headingTwelve",
+                    "type": "event"
+                }
+            ]
         },
         {
             "date": "2015-07-10"
@@ -564,7 +586,14 @@
             "date": "2015-09-02"
         },
         {
-            "date": "2015-09-03"
+            "date": "2015-09-03",
+             "events": [
+                {
+                    "title": "Aim At Art",
+                    "hash": "headingEleven",
+                    "type": "event"
+                }
+            ]
         },
         {
             "date": "2015-09-04"
