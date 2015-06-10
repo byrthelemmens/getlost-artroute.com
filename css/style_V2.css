@@ -21,6 +21,9 @@ a:visited{color:#111; text-decoration: none;}
 	padding:0 0 150px 0;
 
 }
+.ll{
+	padding-left:30px;
+}
 /* COL XS */
 @media (max-width: 767px) {
 	#wrap{		
@@ -200,6 +203,19 @@ h2{
 	text-transform: uppercase;
 	margin-bottom:15px;
 }
+.institute{
+	height:20px;
+	margin:0 0 15px 0px;
+}
+.artistname{
+	height:50px;
+	margin:0 0 20 0px;
+}
+.arttitle{
+	height:40px;
+	margin:10px 0 30px 0px;
+}
+
 
 /* N A V I G A T I O N */
 .navbar, .navbar-nav {
