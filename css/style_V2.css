@@ -45,6 +45,9 @@ a:visited{color:#111; text-decoration: none;}
 		height:40px !important;
 		margin-top:;
 	}
+	.ll{
+	padding-left:0;
+}
 }
 /* COL SM */
 @media (min-width: 768px) and (max-width: 991px) { 
@@ -151,7 +154,10 @@ a:visited{color:#111; text-decoration: none;}
 .instagram:hover{
 	background-position: 0 -40px;
 }
-
+.artworks {
+	border:1px solid white;
+	z-index:999!important;
+}
 /* T E X T  S T Y L E S */
 
 .introtxt{
@@ -211,8 +217,21 @@ h2{
 	height:50px;
 	margin:0 0 20 0px;
 }
+.artistname2{
+	height:80px;
+	margin:0 0 20 0px;
+}
+.artistname3{
+	width:100%;
+	height: auto;
+	margin:0;
+}
 .arttitle{
 	height:40px;
+	margin:10px 0 30px 0px;
+}
+.arttitle2{
+	height:80px;
 	margin:10px 0 30px 0px;
 }
 
