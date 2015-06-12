@@ -63,6 +63,7 @@
 		drawLines(values);
 		context.lineTo(canvasWidth, 0);
 		context.closePath();
+		context.fillStyle = '#FFF';
 		context.fill();
 		context.clip();
 
@@ -81,6 +82,7 @@
 
 			// text AEX value
 			context.font = '14px Helvetica';
+			context.fillStyle = '#000';
 			context.fillText('AEX', 15, 24);
 			context.font = '10px Helvetica';
 			var today = new Date();
@@ -100,7 +102,7 @@
 			}
 			context.restore();
 		}
-		img.src = '../img/img_graph04.png';
+		img.src = '../img/img_graph04.jpg';
 	}
 
 	function drawLines (data) {
