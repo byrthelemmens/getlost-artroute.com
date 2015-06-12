@@ -1,0 +1,367 @@
+body { 
+	margin:0;
+	padding:0;
+	background-color:#ffffff;
+	overflow-x: hidden;
+	font-family: arial, sans-serif;
+	letter-spacing: 0.05em;
+	font-size:1.5em;	
+	text-align: left;
+}
+a{color:#000;text-decoration: none;}
+a:hover{color:#E8A723; text-decoration: none;}
+a:active{color:#E8A723; text-decoration: none;}
+a:visited{color:#111; text-decoration: none;}
+
+.loose{color:#000;text-decoration: none; border-bottom:2px solid #E8A723;}
+
+#wrap{
+	background-color: #Fff;
+	/* margin-left:40px; */
+	padding:0 0 150px 0;
+
+}
+/* COL XS */
+@media (max-width: 767px) {
+	#wrap{		
+		overflow-x: hidden;
+	}
+	.col-xs-12{
+		padding:0;
+	}
+	.row{
+		margin-top:0 !important;
+	}
+	.subtitle, #pagetitle{
+		margin-top:50px !important;
+	}
+	.map img{
+		margin-top:30px;
+	}
+	#pagetitle img{
+		height:40px !important;
+		margin-top:;
+	}
+}
+/* COL SM */
+@media (min-width: 768px) and (max-width: 991px) { 
+	#wrap{
+	}
+	.col-sm-6{
+		padding: 0 20px;
+	}
+	.col-sm-4{
+		padding:0 30px;
+	}
+	.extrapad{
+		margin:0 40px;
+	}
+	.map img{
+		margin-top: 70px;
+	}
+	#pagetitle img{
+		margin-top:200px;
+	}
+}
+/* COL MD */
+@media (min-width: 992px) and (max-width: 1199px) {
+	#wrap{
+	}
+	.map img{
+		margin-top: 70px;
+	}
+	#pagetitle img{
+		margin-top:300px;
+	}
+}
+
+/* COL LG */
+@media (min-width: 1200px) {
+	#wrap{
+	}
+	.map img{
+		margin-top: 70px;
+	}
+	#pagetitle img{
+		margin-top:300px;
+	}
+}
+
+
+.row{
+	margin-top:50px;
+}
+.firstrow{
+	margin-top: 0;
+}
+.titlerow{
+	margin-top:100px;
+	margin-bottom:-30px;
+}
+
+/* I M A G E S */
+
+.img-responsive{
+	position: relative;
+	z-index: 0;
+}
+.picture img {
+	width:85%;
+	margin-bottom:40px;
+}
+.logo{
+	height:30px;
+	margin-right:10px;
+	margin-bottom:10px;
+}
+.logo2{
+	height:40px;
+	margin-right:10px;
+	margin-bottom:10px;
+}
+.logo3{
+	height:55px;
+	margin-bottom:10px;
+}
+
+.twitter, .facebook, .instagram{
+	width:40px;
+	height: 40px;
+	background-position: 0 0;
+	display: inline-block;
+}
+.twitter{
+	background-image: url(../img/social_twitter.png) !important;
+}
+.twitter:hover{
+	background-position: 0 -40px;
+}
+.facebook{
+	background-image: url(../img/social_facebook.png);
+}
+.facebook:hover{
+	background-position: 0 -40px;
+}
+.instagram{
+	background-image: url(../img/social_insta.png);
+}
+.instagram:hover{
+	background-position: 0 -40px;
+}
+
+/* T E X T  S T Y L E S */
+
+.introtxt{
+	margin-top:70px;
+	font-size:1.4em;
+}
+.txt{
+
+}
+h2{
+	margin-top:120px; 
+	font-size:2em; 
+	color:#333; 
+	text-align:center;
+	position: relative;
+	z-index:999;
+}
+.quote{
+	display:block;
+	font-size:0.8em;
+	letter-spacing: 1;
+	padding:0 20px;
+	margin-bottom:-7.5px;
+}
+.bigquote{
+	font-size:1.2em;
+	text-align:center;
+	position:relative; 
+	z-index:999;
+}
+/* T I T L E S */
+#pagetitle img{
+	height:5em; 
+	z-index:999;
+}
+.program img{
+	margin-top: 0 !important;
+}
+.subtitle{
+	margin:0 0 25px 0;
+	font-size:50px;
+	text-transform: uppercase;
+}
+.subtitle img{
+	height: 0.8em;
+}
+.name{
+	font-size:1.5em;
+	text-transform: uppercase;
+	margin-bottom:15px;
+}
+
+/* N A V I G A T I O N */
+.navbar, .navbar-nav {
+	background-color:#ffcc00 !important;
+	border:0;
+	padding:0;
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+}
+.navbar .navbar-collapse {
+  	text-align: center;
+  	text-transform: uppercase;
+}
+.navbar .navbar-nav>.active>a, .navbar.navbar-nav>.active>a:hover, .navbar .navbar-nav>.active>a:focus{
+	background-color: #fff;
+	color:black;
+}
+.navbar-toggle .icon-bar{
+	border:0.1em solid black;
+	color:#000000 !important;
+	visibility: visible !important;
+	}
+
+/* B U T T O N S */
+button .btn, .btn{
+	background-color: #ffffff !important;
+	border-bottom: 2px solid #E8A723;
+	border-radius: 0 !important;
+	margin:20px 0;
+	letter-spacing: 0.05em;
+}
+#mc_embed_signup .btn{
+	background-color: #ffffff !important;
+	border:0 !important;
+	border-bottom: 2px solid #E8A723 !important;
+	border-radius: 0 !important;
+	margin:20px 0;
+	letter-spacing: 0.05em;
+}
+#mc_embed_signup input{
+	border:1px solid #ffcc00 !important;
+}
+
+/* P A N E L  S T Y L E S */
+.panel{
+	border-bottom: 1px solid black;
+	border-radius: 0 !important;
+
+}
+.milestone{
+	border-bottom:3px solid #E8A723 !important;
+}
+.evenement{
+	border-bottom:3px solid #ffcc00 !important;
+}
+
+.panel-title{
+	font-size:1em;
+}
+.panel-collapse .panel-body{
+	border-top:3px solid #FFCC00 !important;
+	background-color: #eee;
+
+}
+.milestone .panel-collapse .panel-body{
+	border-top:1px solid #E8A723 !important;
+
+}
+
+
+/* G R A P H  S T Y L E S */
+#graph-wrapper {
+	display: block;
+	height: 550px;
+	z-index: 9;
+	margin: 0;
+	pointer-events: none;
+}
+
+@media (max-width: 767px) {
+	#graph-wrapper {
+		display: none;
+	}
+	#program {
+		display: none;
+	}
+}
+
+#program {
+	height: 600px;
+	margin: 0;
+	margin-bottom: 122px;
+	background: white;
+}
+#program .program-bar {
+	height: 100%;
+	width: 4px;
+	background: white;
+	border-left: solid 1px #DDD;
+	float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+#program .program-bar:hover {
+	border-left: 1px solid black;	
+}
+
+#program .program-bar-clickable:hover {
+	cursor: pointer;
+}
+
+#program .program-months {
+	height: 48px;
+	overflow: visible;
+	clear: both;
+	position: relative;
+	background: white;
+}
+
+#program .program-months div {
+	float: left;
+	width: 16.66%;
+	height: 48px;
+	padding-top: 12px;
+	text-align: center;
+	border: 1px solid black;
+	border-left: none;
+}
+#program .program-months .program-months-september {
+	border-right: none;
+}
+
+#program .program-event {
+	top: -3px;
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	display: block;
+	border-radius: 4px;
+	z-index: 8;
+}
+#program .program-event:hover, #program .program-event.over {
+	background-color: black !important;
+}
+#program .program-event-data {
+	height: 74px;
+	background: white;	
+	position: relative;
+	z-index: 8;
+}
+#program .program-event-data section {
+	display: inline-block;
+	position: relative;
+	width: 160px;
+}
+#program .program-event-data h1 {
+	font-size: 14px;
+}
+#program .program-event-data p {
+	font-size: 12px;
+}
