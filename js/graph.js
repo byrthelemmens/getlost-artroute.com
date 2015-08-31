@@ -10,7 +10,7 @@
 	var context = graphElement.getContext('2d');
 
 	// data
-	var minValue = 450, maxValue = 700;
+	var minValue = 420, maxValue = 700;
 
 	setCanvasDimensions();
 
