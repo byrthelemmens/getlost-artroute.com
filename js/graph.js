@@ -137,7 +137,7 @@
 			}
 			x += width;
 		});
-		drawLine(x, getHeight(ret));
+		drawLine(x, getHeight(last));
 	}
 
 	function drawLine (x, height) {
