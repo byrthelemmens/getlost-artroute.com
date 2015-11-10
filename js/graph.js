@@ -10,7 +10,7 @@
 	var context = graphElement.getContext('2d');
 
 	// data
-	var minValue = 410, maxValue = 670;
+	var minValue = 406, maxValue = 670;
 
 	setCanvasDimensions();
 
@@ -108,7 +108,7 @@
 	function drawLines (data) {
 
 		var length = data.aex.length;
-		var width;
+		var width, last;
 		if (document.querySelector('.program-bar')) {
 			width = parseFloat(window.getComputedStyle(document.querySelector('.program-bar')).width);
 		} else {
@@ -126,7 +126,7 @@
 
 		// draw 
 		data.aex.forEach(function (row) {
-			var value = row.value;
+			var value = last = row.value;
 			var height;
 
 			if (value) {
@@ -137,6 +137,7 @@
 			}
 			x += width;
 		});
+		drawLine(x, getHeight(ret));
 	}
 
 	function drawLine (x, height) {
